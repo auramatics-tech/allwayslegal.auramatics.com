@@ -1,0 +1,589 @@
+body {
+  position: relative;
+}
+.col_sidebar {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+footer {
+  z-index: 2;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+.db_sidebar {
+  background: rgba(241, 241, 241, 0.7);
+  height: 100%;
+  position: fixed;
+  top: 135px;
+}
+.top_pos {
+  top: 90px;
+}
+header {
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.db_sidebar ul {
+  width: 100%;
+}
+.default_card {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+}
+.db_sidebar li {
+  width: 100%;
+}
+.db_sidebar li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.db_sidebar li a {
+  color: #212529;
+  width: 100%;
+  padding: 12px 1rem;
+  font-size: 18px;
+}
+.db_sidebar li a:hover,
+.db_sidebar li a.active {
+  background: #337ab7;
+  color: #fff;
+  text-decoration: none !important;
+}
+.form-select:focus {
+  border-color: #337ab7;
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
+.lawyer_card {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1.5rem;
+  min-height: 180px;
+}
+.lawyer_card h6 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.lawyer_card .footer {
+  border: 0.02rem solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+.lawyer_card .review {
+  font-size: 14px;
+}
+.lawyer_card:hover,
+.lawyer_card:active,
+.lawyer_card.active {
+  border: 1px solid #337ab7;
+}
+a.btn-sm {
+  padding: 4px 14px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 0px;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+.card_rw_img {
+  width: 150px;
+  height: 150px;
+}
+.detail_card .location {
+  display: flex;
+  gap: 12px;
+}
+.detail_card .location div {
+  width: 20px;
+}
+.detail_card h6 {
+  font-size: 28px;
+}
+.detail_card .review {
+  font-size: 15px;
+}
+.detail_card .footer {
+  justify-content: flex-start;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: start;
+}
+.detail_card .footer ul li {
+  background: ghostwhite;
+  border-radius: 5px;
+  color: #333;
+  border: 1px solid #dee2e6;
+  padding: 2px 10px;
+}
+a.btn-sm.bg-secondary:hover {
+  background: #fff !important;
+}
+.box_info {
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #dee2e6;
+  padding: 1rem;
+  color: #337ab7;
+  font-size: 18px;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+.right-section .detail_card:hover {
+  border: 0.02rem solid #ddd;
+}
+.confirm_right_card .box_info {
+  font-size: 17px;
+}
+.confirm_left_card .card_rw_img {
+  width: 100px;
+  height: 100px;
+}
+.card_rw_img {
+    height:100%;
+}
+.confirm_left_card.detail_card h6 {
+  font-size: 24px;
+}
+.confirm_left_card.lawyer_card {
+  min-height: 198px;
+}
+.sd_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+/* client page css start */
+.client_card {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+  word-wrap: break-word;
+}
+.client_card:hover {
+  border: 1px solid #337ab7;
+}
+
+.client_card .currency {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 2px solid #ddd;
+  padding-right: 10px;
+}
+.client_card .text {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+.client_card p {
+  font-size: 16px;
+  line-height: 20px;
+}
+.client_card p b {
+  font-size: 20px;
+  font-weight: 500;
+  color: #212529;
+}
+
+.heading_after::before {
+  content: "";
+  width: 65px;
+  height: 2px;
+  background-color: #002d6a;
+  position: absolute;
+  margin-top: 40px;
+}
+/* client page css end */
+a.btn_outline {
+  padding: 4px 14px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 0px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  background-color: #fff;
+  color: #337ab7;
+  border: 1px solid #fff;
+}
+a.btn_outline:hover {
+  border: 1px solid #337ab7 !important;
+}
+.alert-warning {
+  background-color: #fffcf4 !important;
+}
+.fs-14px {
+  font-size: 14px;
+}
+.law_grow_div {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+}
+.badge-light-success {
+  color: #337ab7;
+  background-color: #f1faff;
+}
+.fs-8 {
+  font-size: 0.85rem !important;
+}
+.law_grow_div .fs-5 {
+  font-size: 18px !important;
+}
+.bullet-vertical {
+  background-color: #337ab7;
+  width: 2px;
+  height: 50px;
+}
+.client_service_card {
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.client_service_card h6 {
+  color: #212529;
+  font-size: 20px;
+  font-weight: 500;
+}
+.client_service_card a {
+  text-decoration: underline;
+  font-size: 16px;
+}
+@media screen and (min-width: 992px) {
+  .db_sidebar {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .db_sidebar {
+    width: 260px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .db_sidebar {
+    width: 310px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .db_sidebar li a {
+    padding: 8px 14px;
+    font-size: 15px;
+  }
+  .menu-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  .single-campaignCategories-area h6 {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .detail_card h6 {
+    font-size: 20px;
+  }
+  .card_rw_img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .heading_after::before {
+    margin-top: 23px;
+  }
+  .client_card p b {
+    font-size: 18px;
+  }
+  .client_card .currency {
+    font-size: 20px;
+  }
+  .dashboard p {
+    line-height: 20px;
+  }
+  .card_rw_img {
+    width: 80px;
+    height: 80px;
+  }
+  .right_width {
+    max-width: calc(100% - 170px);
+    margin-left: auto;
+  }
+  .pf_name {
+    font-size: 25px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .db_sidebar li a {
+    padding: 6px 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .right_width {
+    max-width: calc(100% - 56px);
+    margin-left: auto;
+  }
+}
+
+/* lawyer css */
+.profile_avatar {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  border: 1px solid #eee;
+}
+.pf_name {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500 !important;
+}
+.ld_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-bottom: 25px;
+}
+.ld_card h3 {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #000;
+  font-size: 25px;
+}
+.ld_card p {
+  margin-bottom: 0px;
+}
+.ld_card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lb_service_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  word-wrap: break-word;
+  background: rgba(241, 241, 241, 0.7);
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-bottom: 25px;
+  min-height: 180px;
+  padding: 1rem;
+}
+.service_title {
+  margin-bottom: 10px;
+  color: #282e3f;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.lb_service_card .price {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.save_btn {
+  cursor: pointer;
+  background: #337ab7;
+  color: #fff;
+  padding: 4px 14px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 0px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  font-size: 18px;
+  border: 2px solid transparent;
+  margin-top: 6px;
+}
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+.pagination nav .flex-1 {
+  display: none;
+}
+.pagination nav svg {
+  width: 20px;
+}
+.p_area h6 {
+  color: #282e3f;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #282e3f;
+}
+.badge-light-success {
+  color: #337ab7;
+  background-color: #f1faff;
+}
+.badge-success {
+  padding: 0.325rem 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #50cd89;
+  /* background-color: #e8fff3; */
+}
+.badge-danger {
+  padding: 0.325rem 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #f1416c;
+  /* background-color: #fff5f8; */
+}
+.appointment_table tbody tr:nth-of-type(odd) th,
+.appointment_table tbody tr:nth-of-type(odd) td,
+.schedules_table tbody tr:nth-of-type(odd) th,
+.schedules_table tbody tr:nth-of-type(odd) td {
+  background: #fff !important;
+  box-shadow: inset 0 0 0 9999px #fff;
+}
+.appointment_table tbody tr:nth-of-type(even) th,
+.appointment_table tbody tr:nth-of-type(even) td,
+.schedules_table tbody tr:nth-of-type(even) th,
+.schedules_table tbody tr:nth-of-type(even) td {
+  background: rgba(241, 241, 241, 0.5) !important;
+  box-shadow: inset 0 0 0 9999px rgba(241, 241, 241, 0.5);
+}
+.lp_card_1 i {
+  color: #337ab7;
+}
+.lp_card_1 p span {
+  font-weight: 500;
+}
+.lp_card_2 h5 {
+  color: #337ab7;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+.lp_card_3 legend,
+.lp_card_4 legend,
+.lp_card_5 legend {
+  color: #337ab7;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+.profile_form label {
+  margin-bottom: 5px;
+}
+.profile_form textarea {
+  height: 100%;
+}
+.disable-click {
+  pointer-events: none;
+}
+.pl_badge {
+  padding: 0.325rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.pl_bg_warning {
+  color: #ffc700;
+  /* background-color: #fff8dd; */
+}
+.pl_bg_success {
+  color: #50cd89;
+  /* background-color: #e8fff3; */
+}
+.pl_bg_primary {
+  color: #009ef7;
+  /* background-color: #f1faff; */
+}
+.pl_bg_danger {
+  color: #f1416c;
+  /* background-color: #f1faff; */
+}
+.pl_bg_primary_dark {
+  color: #337ab7;
+  /* background-color: #f1faff; */
+}
+.mw-100px {
+  min-width: 100px;
+}
+.mw-150px {
+  min-width: 150px;
+}
+.mw-200px {
+  min-width: 200px;
+}
+.warningBg {
+  background-color: #ffc700;
+}
+.successBg {
+  background-color: #50cd89;
+}
+.primaryBg {
+  background-color: #009ef7;
+}
+.dangerBg {
+  background-color: #f1416c;
+}
+.whiteColor {
+  color: #fff;
+}
+.step_complete{
+color: #50cd89;
+}
+ .db_sidebar .booking_ul li a {
+  display: flex;
+  align-items:center;
+}
+.chat-panel{
+  overflow: hidden;
+}
+.chat-bubble{
+  color:#fff !important
+}

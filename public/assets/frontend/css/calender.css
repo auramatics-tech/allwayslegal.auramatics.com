@@ -1,0 +1,241 @@
+#calendar-container {
+    padding: 25px;
+}
+
+#calendar-container table {
+    text-align: center;
+    width: 100% !important;
+}
+
+#calendar-container table th {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#calendar-container table thead th {
+    border-top: 1px solid #337ab7;
+}
+
+#calendar-container table tbody td {
+    color: #337ab7;
+    cursor: pointer;
+}
+
+#calendar-container .now a {
+    color: #fff;
+    background: #337ab7;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+#calendar-container .td-hidden {
+    visibility: hidden;
+}
+
+.flex-container {
+    display: flex;
+    height:50px !important;
+}
+
+#calendar-container h1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0px;
+}
+
+.flex-container {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-container .prev-month,
+.flex-container .next-month {
+    background: transparent !important;
+}
+
+#calendar-container {
+    padding: 0px;
+    /* margin-left: 2rem;
+    margin-right: auto; */
+    /* margin-top: 50px; */
+    border: 1px solid #337ab7;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background: #fff;
+    width: 100% !important;
+}
+
+
+#calendar-container table thead tr th {
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: #337ab7;
+    width: 100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    width: 14.28%;
+
+}
+#calendar-container table tbody tr td{
+padding: 10px;
+}
+#calendar-container table tbody tr td a, .td-hidden {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+}
+
+#calendar-container table tbody tr td a {
+    color: #000000;
+}
+
+#calendar-container table tbody tr td a:hover {
+    color: #ffffff;
+    background: #0EBB33;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+
+.select_date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    background: ghostwhite;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.select_date input, .select_date input::placeholder {
+    border: 0px !important;
+    outline: 0px !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    color: #000000 !important;
+}
+
+.select_date input {
+    background: ghostwhite !important;
+    width: 120px;
+}
+
+.slot_data p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.label_radio label {
+    /* font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center; */
+    color: #000000;
+    border: 1px solid #337ab7;
+   width: 100%;
+    padding: 5px 10px;
+}
+.label_radio label.active,
+.label_radio label:active,
+.label_radio label:hover{
+    background-color: #337ab7 !important;
+    color: #fff !important;
+}
+
+.label_radio label input {
+    position: absolute;
+    margin-left: -21px;
+    opacity: 0;
+}
+.v_active{
+    color: #ffffff !important;
+    background: #0EBB33 !important;
+    border-radius: 4px !important;
+    padding: 5px 10px !important;
+}
+.label_radio label.active {
+    background: #D7FFDF;
+    border: 1px solid #0EBB33;
+}
+
+@media screen and (max-width: 1600px) {
+    #calendar-container, .slot_data {
+        margin-left: 1rem;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #calendar-container, .slot_data {
+        margin-left: 0rem;
+        margin-right: auto;
+    }
+
+    .md_data {
+        display: flex;
+    }
+
+    .slot_data {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .md_data {
+        display: block;
+    }
+
+    #calendar-container, .slot_data {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    #calendar-container, .slot_data {
+        margin-top: 25px;
+    }
+
+    #book_nutrition_form {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tablet_head {
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    .si_share_info p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .slot_data, #book_nutrition_form {
+        width: 100%;
+    }
+
+    #calendar-container {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:320px){
+    #calendar-container table th {
+        padding-left: 8.5px;
+        padding-right: 8.5px;
+    }
+    #calendar-container .now a,#calendar-container table tbody tr td a:hover{
+        padding: 4px 8px;
+    }
+}
+#calendar-container table tbody td .disabled,
+#calendar-container table tbody td .disabled a{
+    pointer-events: none !important;
+}

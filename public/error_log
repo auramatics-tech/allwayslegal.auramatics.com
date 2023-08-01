@@ -1,0 +1,711 @@
+[03-Jun-2023 06:16:32 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 132124672 bytes) in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Lawyer/LawyerProfileController.php on line 83
+[03-Jun-2023 07:16:11 UTC] PHP Fatal error:  Trait "App\Traits\AddressTrait" not found in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Lawyer/LawyerProfileController.php on line 16
+[12-Jun-2023 11:46:56 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 264245248 bytes) in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Booking/BookingController.php on line 30
+[30-Jun-2023 10:06:28 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home/auramati/public_html/allwayslegal.auramatics.com/storage/framework/views/bedf9b1f64ae7bb8736c7d5ffa0b22b7aa5b3a28.php on line 106
+[01-Jul-2023 05:09:15 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/auramati/public_html/allwayslegal.auramatics.com/storage/framework/views/d3f719c13c0e414eb410be771797af5a0a9076c1.php on line 231
+[06-Jul-2023 09:44:40 UTC] PHP Fatal error:  Trait "App\Traits\SlotTrait" not found in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Booking/BookingController.php on line 21
+[06-Jul-2023 09:56:57 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/auramati/public_html/allwayslegal.auramatics.com/vendor/laravel/framework/src/Illuminate/Support/Pluralizer.php on line 119
+[06-Jul-2023 09:57:28 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/auramati/public_html/allwayslegal.auramatics.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 375
+[06-Jul-2023 10:41:14 UTC] PHP Fatal error:  Trait "App\Traits\SlotTrait" not found in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Booking/BookingController.php on line 21
+[06-Jul-2023 10:53:03 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/auramati/public_html/allwayslegal.auramatics.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php on line 297
+[06-Jul-2023 10:56:25 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/auramati/public_html/allwayslegal.auramatics.com/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 570
+[06-Jul-2023 10:56:29 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/auramati/public_html/allwayslegal.auramatics.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 375
+[06-Jul-2023 10:56:39 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/auramati/public_html/allwayslegal.auramatics.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 375
+[06-Jul-2023 10:56:41 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/auramati/public_html/allwayslegal.auramatics.com/vendor/laravel/framework/src/Illuminate/Support/Pluralizer.php on line 74
+[11-Jul-2023 10:50:01 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/auramati/public_html/allwayslegal.auramatics.com/storage/framework/views/ac2a343e1196d9eaf90ced1f7e109e9ebf84506d.php on line 39
+[11-Jul-2023 10:50:27 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/auramati/public_html/allwayslegal.auramatics.com/storage/framework/views/ac2a343e1196d9eaf90ced1f7e109e9ebf84506d.php on line 39
+[11-Jul-2023 10:50:41 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/auramati/public_html/allwayslegal.auramatics.com/storage/framework/views/ac2a343e1196d9eaf90ced1f7e109e9ebf84506d.php on line 41
+[11-Jul-2023 10:50:43 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/auramati/public_html/allwayslegal.auramatics.com/storage/framework/views/ac2a343e1196d9eaf90ced1f7e109e9ebf84506d.php on line 41
+[11-Jul-2023 10:52:15 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/auramati/public_html/allwayslegal.auramatics.com/storage/framework/views/ac2a343e1196d9eaf90ced1f7e109e9ebf84506d.php on line 41
+[12-Jul-2023 11:52:27 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/auramati/public_html/allwayslegal.auramatics.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 368
+[12-Jul-2023 11:53:39 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/auramati/public_html/allwayslegal.auramatics.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 619
+[12-Jul-2023 11:53:47 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/auramati/public_html/allwayslegal.auramatics.com/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 73
+[12-Jul-2023 11:54:04 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/auramati/public_html/allwayslegal.auramatics.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 832
+[12-Jul-2023 11:54:05 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/auramati/public_html/allwayslegal.auramatics.com/vendor/nesbot/carbon/src/Carbon/Traits/Converter.php on line 73
+[12-Jul-2023 11:54:05 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/auramati/public_html/allwayslegal.auramatics.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasAttributes.php on line 870
+[15-Jul-2023 12:19:42 UTC] PHP Fatal error:  Trait "App\Traits\SlotTrait" not found in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Lawyer/LawyerAppointmentController.php on line 18
+[17-Jul-2023 06:43:27 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Client\ClientAppointmentController::check() in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Client/ClientAppointmentController.php on line 212
+[17-Jul-2023 06:43:30 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Client\ClientAppointmentController::check() in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Client/ClientAppointmentController.php on line 212
+[18-Jul-2023 06:08:34 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:08:37 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:08:44 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:08:53 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:08:56 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:08:59 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:09:00 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:09:02 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:09:03 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:09:03 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:09:04 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:09:27 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:09:37 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:09:54 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:09:56 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 06:10:02 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 25
+[18-Jul-2023 07:44:08 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 07:45:03 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 07:46:25 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 07:47:07 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 08:38:03 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 08:47:45 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 09:01:55 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 09:04:24 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 09:15:43 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 09:22:08 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 09:27:38 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 09:40:30 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 09:47:26 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 09:53:49 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 10:03:08 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 10:18:05 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 10:40:14 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 10:45:07 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 10:49:43 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 10:53:02 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 10:57:00 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 11:09:26 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 11:13:12 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 11:17:48 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 11:20:38 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 11:28:15 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 11:37:06 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 11:56:39 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 12:01:19 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 12:05:33 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 12:13:16 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 12:26:29 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 12:34:34 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 12:58:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 13:06:58 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[18-Jul-2023 13:59:40 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 02:48:38 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 02:48:38 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 02:48:38 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 02:48:38 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 03:46:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 04:15:00 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 04:32:24 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 04:46:38 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 04:52:49 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 05:02:32 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 05:19:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 05:45:57 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 05:52:24 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 06:07:20 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 06:10:52 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 06:17:38 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 06:28:50 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 06:42:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 06:45:30 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 06:53:24 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 07:03:14 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 07:04:11 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 264245248 bytes) in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Admin/LawyerController.php on line 88
+[19-Jul-2023 07:04:14 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 264245248 bytes) in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Admin/LawyerController.php on line 88
+[19-Jul-2023 07:10:50 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 07:14:53 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 07:19:49 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 07:37:08 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 07:51:09 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 07:54:15 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 07:56:22 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 08:47:22 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 08:54:27 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:05:27 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:07:02 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:07:35 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:07:48 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:07:50 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:08:07 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:08:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:19:54 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:25:33 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:30:51 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:33:06 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:46:02 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:50:00 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:52:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:56:40 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:57:31 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:57:55 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:58:15 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 09:58:59 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:00:07 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:00:20 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:00:37 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:02:19 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:04:26 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:11:28 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:11:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:11:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:16:03 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:20:33 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:22:47 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:23:55 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:25:00 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:39:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:42:57 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:49:48 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 10:50:20 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:00:29 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:05:00 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:05:21 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:06:40 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:07:37 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:11:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:14:47 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:16:37 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:16:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:16:59 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:22:19 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:23:07 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:28:20 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:31:59 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:37:03 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:38:18 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:38:47 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:39:18 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:41:52 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:42:27 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:42:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:45:53 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:46:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:47:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:47:58 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:51:24 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:52:19 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 11:54:33 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:00:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:03:40 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:04:05 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:08:34 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:10:21 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:11:12 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:13:23 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:14:29 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:15:15 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:15:19 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:15:29 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:16:54 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:17:59 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:20:21 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:20:45 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:25:20 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:25:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:29:08 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:29:24 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:29:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:30:58 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:31:08 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:31:22 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:31:39 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:32:27 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:34:57 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:35:19 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:37:51 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:43:41 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:49:33 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:53:57 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 12:59:16 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 13:05:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 13:18:30 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 13:26:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 13:32:35 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 13:35:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 13:46:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 13:49:06 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[19-Jul-2023 13:52:32 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 02:49:02 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 02:49:02 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 02:49:02 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 02:49:02 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 05:24:43 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 05:31:44 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 05:42:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 05:44:53 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 05:53:43 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 07:19:29 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 07:27:30 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 07:30:29 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 07:35:10 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 07:40:23 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 08:35:51 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 08:41:33 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 08:48:09 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 08:51:12 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 09:02:44 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 09:09:06 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 09:13:26 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 09:22:39 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 09:26:40 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 09:34:45 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 09:42:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 09:47:52 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 09:55:01 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 10:00:18 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 10:06:44 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 10:13:25 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 10:18:44 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 10:22:51 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 10:40:05 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 10:49:14 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 10:55:59 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 11:04:30 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 11:08:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 11:17:52 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 11:27:53 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 11:38:22 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 11:52:06 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 11:57:05 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 12:00:08 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 12:13:52 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 12:18:24 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 12:44:02 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 12:58:25 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[20-Jul-2023 13:01:47 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 02:48:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 02:48:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 02:48:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 02:48:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 04:39:18 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 04:52:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 04:59:20 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 05:01:37 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 05:12:16 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 05:16:31 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 05:23:26 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 05:27:09 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 05:30:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 05:34:47 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 05:38:02 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 05:48:14 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 06:13:00 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 06:21:05 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 06:28:34 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 06:33:32 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 06:39:21 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 06:45:00 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 06:58:30 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 07:13:28 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 07:32:06 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 07:37:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[21-Jul-2023 09:01:58 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[22-Jul-2023 06:31:30 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[24-Jul-2023 02:46:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[24-Jul-2023 02:46:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[24-Jul-2023 02:46:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[24-Jul-2023 04:07:57 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[24-Jul-2023 04:15:51 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[24-Jul-2023 04:25:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[24-Jul-2023 04:31:32 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[24-Jul-2023 04:34:32 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[24-Jul-2023 05:00:50 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[24-Jul-2023 06:02:55 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[24-Jul-2023 06:12:23 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[24-Jul-2023 08:33:12 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[24-Jul-2023 10:12:01 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 02:49:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 02:49:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 02:49:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 02:49:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 03:58:58 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 04:09:57 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 04:13:06 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 04:17:35 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 04:22:55 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 04:26:38 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 04:29:26 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 04:32:57 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 04:50:08 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 04:55:26 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 05:00:17 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 06:05:19 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 06:08:01 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 06:12:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 06:28:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 06:37:07 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 06:39:43 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 06:43:23 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 06:55:19 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 06:58:28 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 07:04:43 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 07:06:57 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 07:11:33 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 08:28:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 08:40:53 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Booking\MessageController::fetch_message() in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Booking/MessageController.php on line 125
+[25-Jul-2023 08:40:53 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Booking\MessageController::fetch_message() in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Booking/MessageController.php on line 125
+[25-Jul-2023 08:40:53 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Booking\MessageController::fetch_message() in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Booking/MessageController.php on line 125
+[25-Jul-2023 08:40:53 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Booking\MessageController::fetch_message() in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Booking/MessageController.php on line 125
+[25-Jul-2023 08:40:54 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Booking\MessageController::fetch_message() in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Booking/MessageController.php on line 125
+[25-Jul-2023 08:40:57 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Booking\MessageController::fetch_message() in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Booking/MessageController.php on line 125
+[25-Jul-2023 08:43:06 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 10:50:18 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 10:50:18 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 11:04:19 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 11:13:04 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 11:16:23 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 11:22:07 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 11:29:42 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 11:42:15 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 11:44:20 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 11:51:21 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 11:58:17 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 12:01:30 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 12:07:08 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[25-Jul-2023 12:14:41 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 03:52:16 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 03:59:17 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 04:08:57 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 04:13:00 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 04:19:30 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 04:42:54 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 04:46:55 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 05:24:52 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 05:40:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 05:43:22 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 05:49:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 05:52:44 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 05:57:40 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 06:00:25 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 06:12:04 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 06:14:50 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 06:44:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 06:49:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 06:52:50 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 07:05:14 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 07:09:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 07:14:30 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 07:18:40 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 07:23:33 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 07:29:29 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 07:34:42 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 08:31:07 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 08:35:44 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 08:35:44 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 08:39:04 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 08:48:23 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 08:50:35 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 08:59:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 09:04:49 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 09:09:05 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 09:13:49 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 09:33:33 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 11:00:01 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 11:11:43 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 12:05:10 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 12:09:32 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 12:13:09 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[26-Jul-2023 12:23:27 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 05:56:20 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 06:01:32 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 06:30:38 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 06:38:21 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 06:52:10 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 07:02:34 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 07:10:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 07:14:39 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 07:19:42 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 07:30:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 07:35:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 07:41:42 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 08:31:47 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 08:37:44 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 08:41:50 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 08:46:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 08:51:10 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 264245248 bytes) in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Admin/AppointmentController.php on line 76
+[27-Jul-2023 08:53:27 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 08:57:49 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 09:01:58 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 09:07:47 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 09:30:01 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 09:33:05 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 09:35:35 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 09:37:52 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 09:43:51 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 09:51:17 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 09:58:17 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 10:12:28 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 10:40:53 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 10:49:42 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 10:56:57 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 11:02:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 11:08:08 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 11:18:37 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 11:21:38 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 11:27:29 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 11:31:27 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 11:43:42 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 11:47:07 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 11:59:28 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 12:13:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 12:15:47 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 12:27:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 12:30:20 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 12:35:14 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[27-Jul-2023 12:40:22 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 03:52:32 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 04:02:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 04:09:43 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 04:28:33 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 04:32:59 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 04:41:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 04:51:15 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 04:55:28 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 05:07:37 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 05:11:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 05:22:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 05:55:59 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 06:21:18 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 06:31:02 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 06:35:23 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 06:37:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 06:51:39 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 07:49:49 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 08:02:47 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 08:11:42 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 08:31:00 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 08:31:00 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 09:58:27 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 10:01:41 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 10:06:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 5
+[28-Jul-2023 10:19:32 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 10:21:34 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 10:54:39 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 10:55:40 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 10:55:41 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 10:55:42 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 11:16:57 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 11:17:23 UTC] PHP Parse error:  syntax error, unexpected integer "10", expecting variable in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 27
+[28-Jul-2023 11:17:35 UTC] PHP Parse error:  syntax error, unexpected integer "10", expecting variable in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 27
+[28-Jul-2023 11:17:37 UTC] PHP Parse error:  syntax error, unexpected integer "10", expecting variable in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 27
+[28-Jul-2023 11:17:42 UTC] PHP Parse error:  syntax error, unexpected integer "10", expecting variable in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 27
+[28-Jul-2023 11:17:48 UTC] PHP Parse error:  syntax error, unexpected integer "10", expecting variable in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 27
+[28-Jul-2023 11:17:53 UTC] PHP Parse error:  syntax error, unexpected integer "10", expecting variable in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 27
+[28-Jul-2023 11:17:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 11:17:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 11:18:02 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 11:19:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:18:27 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:18:28 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:22:43 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:24:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:27:49 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:32:51 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:33:39 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:34:42 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:36:14 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:36:14 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:36:15 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:37:52 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:37:53 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:37:53 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:37:54 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:37:55 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:37:56 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:37:56 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:37:57 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:37:58 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:37:59 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:00 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:01 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:02 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:03 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:04 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:05 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:06 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:07 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:08 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:09 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:10 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:11 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:12 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:13 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:14 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:15 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:16 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:17 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:18 UTC] PHP Parse error:  syntax error, unexpected identifier "where" in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 33
+[28-Jul-2023 12:38:20 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:38:21 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:38:22 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:39:20 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:39:25 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:39:49 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:39:50 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:39:51 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:39:51 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:40:31 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:40:31 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:40:32 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:40:33 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:43:30 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:43:30 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:43:30 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:43:31 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:54:48 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:55:14 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:55:47 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:55:48 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:55:48 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:55:48 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:55:48 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:55:50 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 12:57:20 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 13:00:21 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 13:13:48 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[28-Jul-2023 14:33:07 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 01:32:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 02:14:23 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 03:39:10 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 03:54:01 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 06:50:24 UTC] PHP Fatal error:  Trait "App\Http\Controllers\Lawyer\Illuminate\Support\Facades\File" not found in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Lawyer/LawyerTicketController.php on line 20
+[29-Jul-2023 06:50:25 UTC] PHP Fatal error:  Trait "App\Http\Controllers\Lawyer\Illuminate\Support\Facades\File" not found in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Lawyer/LawyerTicketController.php on line 20
+[29-Jul-2023 06:50:25 UTC] PHP Fatal error:  Trait "App\Http\Controllers\Lawyer\Illuminate\Support\Facades\File" not found in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Lawyer/LawyerTicketController.php on line 20
+[29-Jul-2023 06:50:27 UTC] PHP Fatal error:  Trait "App\Http\Controllers\Lawyer\Illuminate\Support\Facades\File" not found in /home/auramati/public_html/allwayslegal.auramatics.com/app/Http/Controllers/Lawyer/LawyerTicketController.php on line 20
+[29-Jul-2023 07:46:06 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 08:02:15 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 11:12:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 11:20:27 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 11:31:53 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 11:37:39 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 12:55:02 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 13:11:25 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 13:50:14 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 14:06:50 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 14:23:05 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 14:57:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 15:15:17 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 15:32:22 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 15:52:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 16:08:38 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 16:28:22 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 16:47:03 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 17:06:44 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 17:25:26 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 17:36:41 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 17:48:21 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 18:11:52 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 18:29:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 18:46:00 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 19:03:38 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 19:37:43 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 19:56:09 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 20:13:32 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 20:17:58 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 20:52:21 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 21:09:24 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 21:25:34 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 21:41:59 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 22:13:54 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 23:03:06 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 23:20:17 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 23:37:25 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[29-Jul-2023 23:55:00 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 00:29:04 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 00:47:10 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 01:03:34 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 01:35:02 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 01:51:57 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 02:21:54 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 02:38:47 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 02:55:19 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 03:25:21 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 03:43:48 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 03:47:30 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 04:03:50 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 04:20:56 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 04:26:26 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 04:47:05 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 05:04:54 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 05:13:43 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 05:32:29 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 05:50:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 06:06:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 06:22:17 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 06:39:08 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 06:59:31 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 07:17:03 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 07:49:23 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 08:05:49 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 08:23:15 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 08:39:53 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 09:01:48 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 09:17:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 09:34:57 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 09:45:48 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 10:05:05 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 10:22:55 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 10:39:34 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 10:46:45 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 11:03:55 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 11:20:39 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 11:38:12 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 12:04:03 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 12:20:42 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 12:37:54 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 13:04:42 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 13:22:05 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 13:26:18 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 13:33:11 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 13:48:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 14:07:05 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 14:24:01 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 14:47:33 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 15:06:01 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 15:21:00 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 15:41:29 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 15:59:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 16:16:47 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 16:33:03 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 16:53:10 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 17:11:42 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 17:30:44 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 17:40:09 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 17:58:17 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 18:14:39 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 18:32:55 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 18:56:07 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 19:14:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 19:32:01 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 19:48:16 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 20:18:54 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 20:53:17 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 21:11:13 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 21:27:29 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 22:01:43 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 22:18:19 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 22:35:14 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 22:54:07 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[30-Jul-2023 23:25:43 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 00:00:17 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 00:17:03 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 00:33:24 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 00:49:22 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 01:21:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 01:38:41 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 01:48:16 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 02:06:15 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 02:38:58 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 02:55:17 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 03:35:51 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 03:53:22 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 04:10:06 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 04:14:44 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 04:28:03 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 04:35:54 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 05:37:50 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 06:04:45 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 06:19:04 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 11:55:44 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 13:17:00 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 14:29:42 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 15:30:36 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 17:07:46 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 18:27:55 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 19:41:23 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 20:19:18 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[31-Jul-2023 22:30:15 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[01-Aug-2023 01:01:23 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[01-Aug-2023 01:01:23 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[01-Aug-2023 01:54:12 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[01-Aug-2023 03:54:04 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
+[01-Aug-2023 03:58:55 UTC] PHP Warning:  The use statement with non-compound name 'Log' has no effect in /home/auramati/public_html/allwayslegal.auramatics.com/app/helpers.php on line 7
