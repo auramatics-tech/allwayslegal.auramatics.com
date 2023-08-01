@@ -1,330 +1,326 @@
 @extends('admin.layouts.master')
 
 @section('css')
+    <style>
+        .my_p_area_list li:last-child span {
 
-<style>
-    .my_p_area_list li:last-child span {
+            display: none;
 
-        display: none;
-
-    }
-</style>
-
+        }
+    </style>
 @endsection
 
 @section('content')
 
-<div class="toolbar" id="kt_toolbar">
+    <div class="toolbar" id="kt_toolbar">
 
-    <!--begin::Container-->
+        <!--begin::Container-->
 
-    <div id="kt_toolbar_container" class="container-fluid d-flex flex-stack">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <div id="kt_toolbar_container" class="container-fluid d-flex flex-stack">
+            <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <!--begin::Page title-->
+            <!--begin::Page title-->
 
-        <div data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}" class="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0">
+            <div data-kt-swapper="true" data-kt-swapper-mode="prepend"
+                data-kt-swapper-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}"
+                class="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0">
 
-            <!--begin::Title-->
+                <!--begin::Title-->
 
-            <h1 class="d-flex align-items-center text-dark fw-bolder fs-3 my-1"> Ticket Enquiry
+                <h1 class="d-flex align-items-center text-dark fw-bolder fs-3 my-1"> Ticket Enquiry
 
-                <!--begin::Description-->
+                    <!--begin::Description-->
 
-                <!-- <small class="text-muted fs-7 fw-bold my-1 ms-1">#XRS-45670</small> -->
+                    <!-- <small class="text-muted fs-7 fw-bold my-1 ms-1">#XRS-45670</small> -->
 
-                <!--end::Description-->
+                    <!--end::Description-->
 
-            </h1>
+                </h1>
 
-            <!--end::Title-->
+                <!--end::Title-->
+
+            </div>
+
+            <!--end::Page title-->
 
         </div>
 
-        <!--end::Page title-->
+        <!--end::Container-->
 
     </div>
 
-    <!--end::Container-->
+    <div class="post d-flex flex-column-fluid" id="kt_post">
 
-</div>
+        <!--begin::Container-->
 
-<div class="post d-flex flex-column-fluid" id="kt_post">
+        <div id="kt_content_container" class="container-xxl">
 
-    <!--begin::Container-->
+            <!--begin::Card-->
 
-    <div id="kt_content_container" class="container-xxl">
+            <div class="card">
 
-        <!--begin::Card-->
+                <!--begin::Card header-->
 
-        <div class="card">
+                <div class="card-header border-0 pt-6">
 
-            <!--begin::Card header-->
+                    <!--begin::Card title-->
 
-            <div class="card-header border-0 pt-6">
+                    <div class="card-title">
 
-                <!--begin::Card title-->
+                        <!--begin::Search-->
 
-                <div class="card-title">
+                        <form class="d-flex align-items-center position-relative my-1" method="get">
 
-                    <!--begin::Search-->
+                            <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
 
-                    <form class="d-flex align-items-center position-relative my-1" method="get">
+                            <span class="svg-icon svg-icon-1 position-absolute ms-6">
 
-                        <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
 
-                        <span class="svg-icon svg-icon-1 position-absolute ms-6">
+                                    <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2"
+                                        rx="1" transform="rotate(45 17.0365 15.1223)" fill="black"></rect>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+                                        fill="black"></path>
 
-                                <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1" transform="rotate(45 17.0365 15.1223)" fill="black"></rect>
+                                </svg>
 
-                                <path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="black"></path>
+                            </span>
 
-                            </svg>
+                            <!--end::Svg Icon-->
 
-                        </span>
+                            <input type="text" class="form-control w-250px ps-14" placeholder="Search "
+                                value="{{ isset(request()->q) ? request()->q : '' }}" name="q">
 
-                        <!--end::Svg Icon-->
+                        </form>
 
-                        <input type="text" class="form-control w-250px ps-14" placeholder="Search " value="{{ isset(request()->q) ? request()->q : '' }}" name="q">
+                        <!--end::Search-->
 
-                    </form>
-
-                    <!--end::Search-->
-
-                </div>
-            </div>
-
-            <!--end::Card header-->
-
-            <!--begin::Card body-->
-
-            <div class="card-body pt-0">
-
-                <!--begin::Table-->
-
-                @if (Session::has('success'))
-
-                <div class="alert alert-success text-center">
-
-                    {{ Session::get('success') }}
-
+                    </div>
                 </div>
 
-                @endif
+                <!--end::Card header-->
 
-                <div id="kt_table_services_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                <!--begin::Card body-->
 
-                    <div class="table-responsive">
+                <div class="card-body pt-0">
 
-                        <table class="table align-middle table-row-dashed fs-6 gy-5 dataTable no-footer" id="kt_table_services">
+                    <!--begin::Table-->
 
-                            <!--begin::Table head-->
+                    @if (Session::has('success'))
+                        <div class="alert alert-success text-center">
 
-                            <thead>
+                            {{ Session::get('success') }}
 
-                                <!--begin::Table row-->
+                        </div>
+                    @endif
 
-                                <tr class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0">
+                    <div id="kt_table_services_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
 
-                                    <th class="min-w-50px">
+                        <div class="table-responsive">
 
-                                        S.no</th>
+                            <table class="table align-middle table-row-dashed fs-6 gy-5 dataTable no-footer"
+                                id="kt_table_services">
 
-                                    <th class="min-w-100px">
+                                <!--begin::Table head-->
 
-                                        Title</th>
+                                <thead>
 
-                                    <th class="min-w-100px">
+                                    <!--begin::Table row-->
 
-                                        Description</th>
-                                    <th class="min-w-100px">
+                                    <tr class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0">
 
-                                        Created By</th>
+                                        <th class="min-w-50px">
 
-                                    <th class="min-w-100px">
+                                            S.no</th>
 
-                                        Status</th>
+                                        <th class="min-w-100px">
 
-                                    <th class="min-w-125px " tabindex="0" aria-controls="kt_table_services" rowspan="1" colspan="1" aria-label="Two-step: activate to sort column ascending" style="width: 125px;">
+                                            Title</th>
 
-                                        Created At</th>
+                                        <th class="min-w-100px">
 
-                                    <th class="text-end  sorting_disabled" rowspan="1" colspan="1" aria-label="Actions" style="width: 170px;">Actions</th>
+                                            Description</th>
+                                        <th class="min-w-100px">
 
-                                </tr>
+                                            Created By</th>
 
-                                <!--end::Table row-->
+                                        <th class="min-w-100px">
 
-                            </thead>
+                                            Status</th>
 
-                            <!--end::Table head-->
+                                        <th class="min-w-125px " tabindex="0" aria-controls="kt_table_services"
+                                            rowspan="1" colspan="1"
+                                            aria-label="Two-step: activate to sort column ascending" style="width: 125px;">
 
-                            <!--begin::Table body-->
+                                            Created At</th>
 
-                            <tbody class="text-gray-600 fw-bold">
+                                        <th class="text-end  sorting_disabled" rowspan="1" colspan="1"
+                                            aria-label="Actions" style="width: 170px;">Actions</th>
 
-                                <!--begin::Table row-->
+                                    </tr>
 
-                                @if (count($data))
+                                    <!--end::Table row-->
 
-                                @foreach ($data as $key => $ticket)
+                                </thead>
 
-                                <tr class="odd">
+                                <!--end::Table head-->
 
-                                    <td>{{$key+1}}</td>
+                                <!--begin::Table body-->
 
-                                    <td>
+                                <tbody class="text-gray-600 fw-bold">
 
-                                        <!--begin::service details-->
+                                    <!--begin::Table row-->
 
-                                        <div class="d-flex flex-column">
+                                    @if (count($data))
+                                        @foreach ($data as $key => $ticket)
+                                            <tr class="odd">
 
-                                            <a href="#" class="text-gray-800 text-hover-primary mb-1">{{ isset($ticket->title) ? $ticket->title : '' }}
+                                                <td>{{ $key + 1 }}</td>
 
-                                            </a>
+                                                <td>
 
-                                        </div>
+                                                    <!--begin::service details-->
 
-                                        <!--begin::service details-->
+                                                    <div class="d-flex flex-column">
 
-                                    </td>
+                                                        <a href="#"
+                                                            class="text-gray-800 text-hover-primary mb-1">{{ isset($ticket->title) ? $ticket->title : '' }}
 
-                                    <td>{{ isset($ticket->description) ? $ticket->description : '' }}</td>
-                                    <td>{{ isset($ticket->user_name) ? $ticket->user_name : '' }}</td>
+                                                        </a>
 
-                                    <td>
-                                        <div class="menu-item px-3">
-                                            <form action="{{ route('admin.changestatus') }}" class="changeStatusForm">
-                                                @csrf
-                                                <select name="status" id="statusDropdown" data-id="{{ $ticket->id }}" class="form-select form-select-solid statusDropdown" data-control="select2" data-hide-search="true">
-                                                    <option value="2" @if($ticket->status == 2) selected @endif>Completed</option>
-                                                    <option value="1" @if($ticket->status == 1) selected @endif>In-progress</option>
-                                                    <option value="0" @if($ticket->status == 0) selected @endif>Requested</option>
-                                                </select>
-                                            </form>
-                                        </div>
-                                    </td>
-                                    <td data-order="2023-01-08T12:00:52+05:30">
+                                                    </div>
 
-                                        {{ date('F d, Y', strtotime($ticket->created_at)) }}
+                                                    <!--begin::service details-->
 
-                                    </td>
+                                                </td>
 
-                                    <!--begin::Action=-->
+                                                <td>{{ isset($ticket->description) ? $ticket->description : '' }}</td>
+                                                <td>{{ isset($ticket->user_name) ? $ticket->user_name : '' }}</td>
 
-                                    <td class="text-end">
+                                                <td>
+                                                    <div class="menu-item px-3">
+                                                        <form action="{{ route('admin.changestatus') }}"
+                                                            class="changeStatusForm">
+                                                            @csrf
+                                                            <select name="status" id="statusDropdown"
+                                                                data-id="{{ $ticket->id }}"
+                                                                class="form-select form-select-solid statusDropdown"
+                                                                data-control="select2" data-hide-search="true">
+                                                                <option value="2"
+                                                                    @if ($ticket->status == 2) selected @endif>
+                                                                    Completed</option>
+                                                                <option value="1"
+                                                                    @if ($ticket->status == 1) selected @endif>
+                                                                    In-progress</option>
+                                                                <option value="0"
+                                                                    @if ($ticket->status == 0) selected @endif>
+                                                                    Requested</option>
+                                                            </select>
+                                                        </form>
+                                                    </div>
+                                                </td>
+                                                <td data-order="2023-01-08T12:00:52+05:30">
 
-                                        <a href="#" class="btn btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+                                                    {{ date('F d, Y', strtotime($ticket->created_at)) }}
 
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+                                                </td>
 
-                                            <span class="svg-icon svg-icon-5 m-0">
+                                                <!--begin::Action=-->
 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <td class="text-end">
 
-                                                    <path d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z" fill="black"></path>
+                                                    <a href="#"
+                                                        class="btn btn-light btn-active-light-primary d-inline-flex"
+                                                        data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                        Actions
+                                                        <span class="svg-icon svg-icon-5 m-0">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path
+                                                                    d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
+                                                                    fill="black"></path>
+                                                            </svg>
+                                                        </span>
+                                                        @php $ticketMessageCount = getTicketMessageCount($ticket->id); @endphp
+                                                        @if (!empty($ticketMessageCount))
+                                                            <span
+                                                                class="badge rounded-pill bg-warning ms-1">{{ $ticketMessageCount }}</span>
+                                                        @endif
+                                                    </a>
+                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-150px py-4" data-kt-menu="true">
+                                                        <div class="menu-item px-3">
+                                                            <a href="{{ route('admin.join_chat', base64_encode($ticket->id)) }}"
+                                                                title="Set Reply" class="menu-link px-3">Reply</a>
+                                                        </div>
+                                                    </div>
 
-                                                </svg>
+                                                </td>
+                                            </tr>
+                                        @endforeach
+                                    @endif
 
-                                            </span>
+                                </tbody>
 
-                                            <!--end::Svg Icon-->
+                                <!--end::Table body-->
 
-                                        </a>
+                            </table>
 
-                                        <!--begin::Menu-->
+                        </div>
 
-                                        <div style="width:170px" class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7  py-4" data-kt-menu="true">
+                        <!-- <div class="row">
 
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-3">
-                                                <a href="{{route('admin.join_chat',base64_encode($ticket->id))}}" title="Set Reply" class="menu-link px-3">Reply</a>
-                                        </div>
+                                                    <div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start"></div>
 
-                                      
-                                       {{-- <div class="menu-item px-3">
+                                                    <div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end">
 
-                                            <a href="javascript:" rel="" rel1="delete-service" class="deleteRecord menu-link px-3">Delete</a>
+                                                        <div class="dataTables_paginate paging_simple_numbers" id="kt_table_services_paginate">
 
-                                        </div>--}}
+                                                            <ul class="pagination">
 
-                                        <!--end::Menu item-->
+                                                                <li class="paginate_button page-item previous disabled" id="kt_table_services_previous"><a href="#" aria-controls="kt_table_services" data-dt-idx="0" tabindex="0" class="page-link"><i class="previous"></i></a></li>
+
+                                                                <li class="paginate_button page-item active"><a href="#" aria-controls="kt_table_services" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+
+                                                                <li class="paginate_button page-item "><a href="#" aria-controls="kt_table_services" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+
+                                                                <li class="paginate_button page-item "><a href="#" aria-controls="kt_table_services" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+
+                                                                <li class="paginate_button page-item next" id="kt_table_services_next"><a href="#" aria-controls="kt_table_services" data-dt-idx="4" tabindex="0" class="page-link"><i class="next"></i></a></li>
+
+                                                            </ul>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div> -->
+
+                        <div class="row text-end">
+
+                            {{ $data->withQueryString()->onEachSide(0)->links('pagination::bootstrap-4') }}
+
+                        </div>
 
                     </div>
 
-                    <!--end::Menu-->
-
-                    </td>
-
-                    <!--end::Action=-->
-
-                    </tr>
-
-                    @endforeach
-
-                    @endif
-
-                    </tbody>
-
-                    <!--end::Table body-->
-
-                    </table>
+                    <!--end::Table-->
 
                 </div>
 
-                <!-- <div class="row">
-
-                                        <div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start"></div>
-
-                                        <div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end">
-
-                                            <div class="dataTables_paginate paging_simple_numbers" id="kt_table_services_paginate">
-
-                                                <ul class="pagination">
-
-                                                    <li class="paginate_button page-item previous disabled" id="kt_table_services_previous"><a href="#" aria-controls="kt_table_services" data-dt-idx="0" tabindex="0" class="page-link"><i class="previous"></i></a></li>
-
-                                                    <li class="paginate_button page-item active"><a href="#" aria-controls="kt_table_services" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
-
-                                                    <li class="paginate_button page-item "><a href="#" aria-controls="kt_table_services" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
-
-                                                    <li class="paginate_button page-item "><a href="#" aria-controls="kt_table_services" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
-
-                                                    <li class="paginate_button page-item next" id="kt_table_services_next"><a href="#" aria-controls="kt_table_services" data-dt-idx="4" tabindex="0" class="page-link"><i class="next"></i></a></li>
-
-                                                </ul>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div> -->
-
-                <div class="row text-end">
-
-                    {{ $data->withQueryString()->onEachSide(0)->links('pagination::bootstrap-4') }}
-
-                </div>
+                <!--end::Card body-->
 
             </div>
 
-            <!--end::Table-->
+            <!--end::Card-->
 
         </div>
 
-        <!--end::Card body-->
+        <!--end::Container-->
 
     </div>
-
-    <!--end::Card-->
-
-</div>
-
-<!--end::Container-->
-
-</div>
 
 
 
@@ -333,34 +329,32 @@
 
 
 @section('script')
+    <!--begin::Page Scripts(used by this page)-->
 
-<!--begin::Page Scripts(used by this page)-->
+    <script src="{{ asset('backend/assets/js/pages/crud/ktdatatable/base/html-table.js') }}"></script>
+    <script>
+        $(document).on('change', '.statusDropdown', function() {
+            var id = $(this).attr('data-id');
+            var dispose_status = $(this).val();
 
-<script src="{{ asset('backend/assets/js/pages/crud/ktdatatable/base/html-table.js') }}"></script>
-<script>
-    $(document).on('change', '.statusDropdown', function() {
-        var id = $(this).attr('data-id');
-        var dispose_status = $(this).val();
-
-        // Send Ajax request
-        $.ajax({
-            url: "{{ route('admin.changestatus') }}",
-            type: "POST",
-            data: {
-                id: id,
-                status: dispose_status, // Corrected variable name here
-                _token: "{{ csrf_token() }}"
-            },
-            success: function(response) {
-                alert("Status updated successfully.");
-            },
-            error: function(xhr, status, error) {
-                alert("Error updating status.");
-            }
+            // Send Ajax request
+            $.ajax({
+                url: "{{ route('admin.changestatus') }}",
+                type: "POST",
+                data: {
+                    id: id,
+                    status: dispose_status, // Corrected variable name here
+                    _token: "{{ csrf_token() }}"
+                },
+                success: function(response) {
+                    alert("Status updated successfully.");
+                },
+                error: function(xhr, status, error) {
+                    alert("Error updating status.");
+                }
+            });
         });
-    });
-</script>
+    </script>
 
-<!--end::Page Scripts-->
-
+    <!--end::Page Scripts-->
 @endsection

@@ -64,8 +64,16 @@
                                     @endif
                                 </td>
                                 <td>
-                                <div style="display: flex;gap:12px; align-items:center;justify-content:center">
+                                <div style="display: flex;gap:12px; align-items:center;justify-content:center d-inline-flex">
                                 <a href="{{route('client.join_chat_client',base64_encode($ticket->id))}}" class="btn" style="background:#337ab7;color:#fff"><b><i class="fa fa-reply"></i></b></a>
+                                @php $ticketMessageCount = getTicketMessageCount($ticket->id);
+                                // echo"<pre>";print_r($messageCount);die;
+                                @endphp
+                                @if(!empty($ticketMessageCount))
+                                <span class="badge rounded-pill bg-warning ms-1">
+                                    {{ $ticketMessageCount }}
+                                </span>
+                                @endif
                                 </div>
                                 </td>
                             </tr>

@@ -77,6 +77,12 @@
                             <rect x="6" y="7" width="12" height="2" rx="1" fill="currentColor"></rect>
                         </svg>
                     </span><span class="ms-1 d-none d-sm-inline">Messages</span>
+                    @php $TotalMessageCount = getTotalMessageCount(); @endphp
+                    @if(!empty($TotalMessageCount))
+                    <span class="badge rounded-pill bg-warning ms-1">
+                        {{ $TotalMessageCount }}
+                    </span>
+                    @endif
                 </a>
             </li>
             <li>
@@ -111,6 +117,12 @@
                             <path opacity="0.3" d="M19.1 17.0152C19.7 17.3152 19.8 18.1152 19.3 18.5152C17.5 20.5152 14.9 21.7152 12 21.7152C9.1 21.7152 6.50001 20.5152 4.70001 18.5152C4.30001 18.0152 4.39999 17.3152 4.89999 17.0152L7.39999 15.6152C8.49999 16.9152 10.2 17.8152 12 17.8152C13.8 17.8152 15.5 17.0152 16.6 15.6152L19.1 17.0152ZM6.39999 13.9151C6.19999 13.2151 6 12.5152 6 11.8152C6 8.81517 8.2 6.41515 11 5.91515V3.01519C11 2.41519 10.4 1.91519 9.79999 2.01519C5.29999 3.01519 2 7.01517 2 11.8152C2 12.8152 2.2 13.8152 2.5 14.8152C2.7 15.4152 3.4 15.7152 4 15.3152L6.39999 13.9151Z" fill="currentColor"></path>
                         </svg>
                     </span><span class="ms-1 d-none d-sm-inline">Ticket Enquiry</span>
+                    @php $TotalTicketMessageCount = getTotalTicketMessageCount(); @endphp
+                    @if(!empty($TotalTicketMessageCount))
+                    <span class="badge rounded-pill bg-warning ms-1">
+                        {{ $TotalTicketMessageCount }}
+                    </span>
+                    @endif
                 </a>
             </li>
         </ul>

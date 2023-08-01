@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Appointment;
 use App\Models\Lawyer;
 use App\Models\Message;
+use App\Models\MessageView;
 use Auth;
 use DB;
 use Carbon;
@@ -42,12 +43,16 @@ class MessageController extends Controller
         $data = Appointment::find($id);
 
         // echo"<pre>";print_r($data);die;
-        $chat =  Message::where('appointment_id', $id)->orderBy('id', 'desc')->get();
+        $view = MessageView::where('appointment_id',$id)->pluck('msg_id')->toArray();
+        $chat =  Message::whereNotIn('appointment_id', $view)->where('appointment_id',$id)->where('sender_id', '!=',Auth::id())->get();
         //  echo"<pre>";print_r($chat);die;
         if (!empty($chat) && count($chat)) {
             foreach ($chat as $c) {
-                $c->seen = 0;
-                $c->save();
+                $c_view = new MessageView();
+                $c_view->appointment_id =  $c->appointment_id;
+                $c_view->msg_id = $c->id;
+                $c_view->user_id = Auth::id();
+                $c_view->save();
             }
         }
         $messages = Message::select('messages.*', DB::raw("(select users.name from users where users.id = messages.sender_id) as user_name"))->where('appointment_id', $data->id)->get();
@@ -61,7 +66,6 @@ class MessageController extends Controller
         $chat->appointment_id = $request->appointment_id;
         $chat->seen = 1;
         $chat->sender_id = Auth::id();
-
         if ($request->image) {
             $chat->type = 'image';
         } else {

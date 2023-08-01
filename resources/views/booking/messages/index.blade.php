@@ -61,11 +61,10 @@
                             <td>{{ isset($appointment->client_name) ? $appointment->client_name : '' }}</td>
                             @endif
                             <td>
-                                <div style="display: flex;gap:12px; align-items:center; justify-content:center">
-
+                                <div style="display: flex;gap:12px; align-items:center; justify-content:center d-inline-flex">
                                     <a href="{{ route('chat', $appointment->id ) }}" class="btn" style="background:#337ab7;color:#fff"><b><i class="fa fa-reply"></i></b></a>
                                     @php $messageCount = getMessageCount($appointment->id);
-                                    
+                                    // echo"<pre>";print_r($messageCount);die;
                                     @endphp
                                     @if(!empty($messageCount))
                                     <span class="badge rounded-pill bg-warning ms-1">

@@ -13,6 +13,8 @@ use App\Models\Enquiry;
 
 use App\Models\TicketChat;
 
+use App\Models\TicketMessageView;
+
 use Carbon;
 
 use Auth;
@@ -44,10 +46,18 @@ class TicketController extends Controller
     public function join_chat($id)
     {
         $enquiry = Enquiry::Find(base64_decode($id));
+        $view = TicketMessageView::where('ticket_id',base64_decode($id))->pluck('msg_id')->toArray();
+        $chat =  TicketChat::whereNotIn('id',$view)->where('ticket_id',base64_decode($id))->where('user_id', '!=',Auth::id())->get();
+        if (!empty($chat) && count($chat)) {
+            foreach ($chat as $c) {
+                $c_view = new TicketMessageView();
+                $c_view->ticket_id = base64_decode($id);
+                $c_view->msg_id = $c->id;
+                $c_view->user_id = Auth::id();
+                $c_view->save();
+            }
+        }
         $messages = TicketChat::select('ticket_chat.*', DB::raw("(select users.name from users where users.id = ticket_chat.user_id) as user_name"))->where('ticket_id', $enquiry->id)->get();
-        //    echo"<pre>";
-        //    print_r(  $enquiry);
-        //    die;
         return view('admin.ticket.ticket_chat', compact('enquiry', 'messages'));
     }
 
@@ -57,6 +67,7 @@ class TicketController extends Controller
         $chat = new TicketChat();
         $chat->message = $request->msg_box;
         $chat->ticket_id = $request->ticket_id;
+       
         $chat->user_id = Auth::id();
         if ($request->image) {
             $chat->type = 'image';
