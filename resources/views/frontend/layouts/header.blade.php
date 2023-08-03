@@ -103,6 +103,7 @@
                                 <i class="fas fa-user"></i>
                             </a>
                         @endauth
+                        
                     </div>
                 @endif
                 @if (Route::is('lawyer.*') || Route::is('client.*'))

@@ -93,16 +93,7 @@
 
     }
 </style>
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-3 col-lg-3 col-xl-3">
-            @if(Auth::user()->lawyer)
-            @include('lawyer.includes.sidebar')
-            @else
-            @include('client.includes.sidebar')
-            @endif
-        </div>
-        <div class="col-md-9 col-lg-9 col-xl-9 py-4">
+<div class="py-4">
             @if (Session::has('success'))
             <div class="alert alert-success text-center">
                 {{ Session::get('success') }}
@@ -130,7 +121,7 @@
                         <div class="card-toolbar">
                             <!--begin::Close-->
                             <div class="btn btn-sm btn-icon btn-active-light-primary" id="kt_drawer_chat_close">
-                                <a href="{{ route('messages.index') }}" type="button" class="btn btn-secondary"><span class="svg-icon svg-icon-2">
+                                <a href="{{ route('dashboard.messages.index') }}" type="button" class="btn btn-secondary"><span class="svg-icon svg-icon-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor"></rect>
                                             <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="currentColor"></rect>
@@ -184,10 +175,7 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
 </div>
-
 @endsection
 @section('script')
 <script>

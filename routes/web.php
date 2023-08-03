@@ -65,19 +65,17 @@ Route::get('forgot-password', [App\Http\Controllers\Auth\ForgotPasswordControlle
 Route::post('forgot-password', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'get_password_link'])->name("get_password_link");
 
 Route::get('/booking', [BookingController::class, 'index'])->name('booking');
-Route::get('/choose-lawyer', [BookingController::class, 'choose_lawyer'])->name('choose_lawyer');
-Route::post('/save-booking-data', [BookingController::class, 'save_booking_data'])->name('save_booking_data');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
+    Route::get('/choose-lawyer', [BookingController::class, 'choose_lawyer'])->name('choose_lawyer');
+    Route::post('/save-booking-data', [BookingController::class, 'save_booking_data'])->name('save_booking_data');
     Route::get('/schedule-time', [BookingController::class, 'schedule_time'])->name('schedule_time');
     Route::post('/get-slots', [BookingController::class, 'get_slots'])->name('get_slots');
     Route::get('/reschedule-time', [BookingController::class, 'schedule_time'])->name('reschedule_time');
-    
     Route::post('/reschedule-save-slots', [BookingController::class, 'reschedule_slots'])->name('reschedule_slots');
     Route::post('/save-slots', [BookingController::class, 'save_slots'])->name('save_slots');
-
     Route::get('/confirmation', [BookingController::class, 'confirmation'])->name('confirmation');
     Route::get('/detail-review', [BookingController::class, 'detail_review'])->name('detail_review');
     // Route::get('/review', [BookingController::class, 'detail_review'])->name('detail_review');
@@ -143,11 +141,10 @@ Route::prefix('client')->middleware(['auth', 'auth.isClient'])->name('client.')-
     Route::get('/fetch-msg', [ClientTicketController::class, 'fetch_msg'])->name('fetch_msg_client');
 });
 
-Route::middleware(['auth'])->group(function () {
+Route::prefix('dashboard')->middleware(['auth'])->name('dashboard.')->group(function () {
     Route::resource('/messages', MessageController::class);
     Route::get('/change-password', [DashboardController::class, 'show'])->name('change_password');
     Route::post('/change-password-save', [DashboardController::class, 'change_password_save'])->name('change_password_save');
     Route::get('/auth/zoom', [ZoomController::class, 'redirectToZoom']);
     Route::get('/callback/zoom', [ZoomController::class, 'handleZoomCallback']);
-
 });

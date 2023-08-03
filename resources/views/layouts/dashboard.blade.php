@@ -27,15 +27,33 @@
         .top_space {
             margin-top: 90px
         }
+        header {
+            background: rgba(255, 255, 255, 1);
+        }
     </style>
     @yield('css')
 </head>
 
 <body>
     <div id="dashboard">
-        @include('frontend.layouts.header')
+        @include('booking.includes.header')
         <main class="top_space">
-            @yield('content')
+            <div class="container-fluid py-lg-5 py-4 px-0">
+                <div class="d-flex">
+                    <div class="col_sidebar">
+                        @if (Route::is('lawyer.*') || Route::is('client.*') || Route::is('dashboard.*'))
+                            @include('booking.includes.dashboard_sidebar')
+                        @elseif(Route::is('booking_summary'))
+                        @else
+                            @include('booking.includes.sidebar')
+                        @endif
+                    </div>
+                    <div   @if(!Route::is('booking_summary')) id="content" @endif class="px-xl-4 px-3">
+                        @yield('content')
+                    </div>
+                </div>
+            </div>
+
         </main>
         <div id="footer">
             @include('frontend.layouts.footer')
@@ -49,40 +67,53 @@
     <script src="{{ asset('assets/frontend/js/script.js') }}"></script>
     <script>
         $(document).ready(function() {
-          $('#profile_photo_path').on('change', function() {
-            var file = $(this)[0].files[0];
-            var formData = new FormData();
-            formData.append('profile_photo_path', file);
-        
-            // Retrieve the CSRF token from the meta tag
-            var csrfToken = $('meta[name="csrf-token"]').attr('content');
-            
-            // Include the CSRF token in the AJAX request headers
-            $.ajaxSetup({
-              headers: {
-                'X-CSRF-TOKEN': csrfToken
-              }
+            $('#profile_photo_path').on('change', function() {
+                var file = $(this)[0].files[0];
+                var formData = new FormData();
+                formData.append('profile_photo_path', file);
+
+                // Retrieve the CSRF token from the meta tag
+                var csrfToken = $('meta[name="csrf-token"]').attr('content');
+
+                // Include the CSRF token in the AJAX request headers
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': csrfToken
+                    }
+                });
+
+                $.ajax({
+                    url: '{{ url('/upload-profile') }}',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        console.log('Image uploaded successfully');
+                        location.reload(true);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error uploading image:', error);
+                    }
+                });
             });
-        
-            $.ajax({
-              url: '{{ url("/upload-profile") }}',
-              type: 'POST',
-              data: formData,
-              processData: false,
-              contentType: false,
-              success: function(response) {
-                console.log('Image uploaded successfully');
-                location.reload(true);
-              },
-              error: function(xhr, status, error) {
-                console.error('Error uploading image:', error);
-              }
-            });
-          });
         });
-        
-        
-        </script>
+        $(document).ready(function() {
+            // Bind the click event to the #toggle_btn element
+            $('#toggle_btn').click(function(event) {
+                console.log("ncxbv");
+                $("#dashboard_sidebar").toggleClass("active");
+
+                if ($("#dashboard_sidebar").hasClass("active")) {
+                    $(".txt_span").removeClass('d-sm-inline');
+                    $("#content").addClass('fullwidth');
+                } else {
+                    $(".txt_span").addClass('d-sm-inline');
+                    $("#content").removeClass('fullwidth');
+                }
+            });
+        });
+    </script>
     @yield('script')
 </body>
 

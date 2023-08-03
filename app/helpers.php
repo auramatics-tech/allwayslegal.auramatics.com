@@ -4,7 +4,7 @@ use App\Models\Appointment;
 use App\Models\Message;
 use App\Models\TicketChat;
 use Illuminate\Support\Facades\Auth;
-use Log;
+// use Log;
 
 function getAppointmentsCount()
 {

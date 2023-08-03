@@ -1,4 +1,4 @@
-<div class="db_sidebar py-lg-4 py-3">
+<div class="db_sidebar py-lg-4 py-3" id="dashboard_sidebar">
     <div class="d-flex flex-column align-items-center align-items-sm-start px-lg-3 px-2 pt-2 text-white min-vh-100">
         <ul class="booking_ul nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
             id="menu">
@@ -18,7 +18,7 @@
                             </svg>
                         </span>
                         <!--end::Svg Icon-->
-                    </span><span class="ms-1 d-none d-sm-inline">Case summary</span>
+                    </span><span class="ms-1 d-none d-sm-inline txt_span">Case summary</span>
                     <i class="fas fa-check-circle step_complete d-none ms-auto"></i>
                 </a>
             </li>
@@ -37,7 +37,7 @@
                             </svg>
                         </span>
                     </span>
-                    <span class="ms-1 d-none d-sm-inline">Legal needs</span>
+                    <span class="ms-1 d-none d-sm-inline txt_span">Legal needs</span>
                     <i class="fas fa-check-circle step_complete d-none ms-auto"></i>
                 </a>
             </li>
@@ -54,7 +54,7 @@
                                     height="8" rx="4" fill="currentColor"></rect>
                             </svg>
                         </span>
-                    </span><span class="ms-1 d-none d-sm-inline">Choose
+                    </span><span class="ms-1 d-none d-sm-inline txt_span">Choose
                         lawyer</span>
                         <i class="fas fa-check-circle step_complete d-none ms-auto"></i>
                 </a>
@@ -77,7 +77,7 @@
                                     fill="currentColor"></path>
                             </svg>
                         </span>
-                    </span> <span class="ms-1 d-none d-sm-inline">Schedule
+                    </span> <span class="ms-1 d-none d-sm-inline txt_span">Schedule
                         time</span>
                         <i class="fas fa-check-circle step_complete d-none ms-auto" style="display: none"></i>
                 </a>
@@ -95,7 +95,7 @@
                                 d="M10.3629 14.0084L8.92108 12.6429C8.57518 12.3153 8.03352 12.3153 7.68761 12.6429C7.31405 12.9967 7.31405 13.5915 7.68761 13.9453L10.2254 16.3488C10.6111 16.714 11.215 16.714 11.6007 16.3488L16.3124 11.8865C16.6859 11.5327 16.6859 10.9379 16.3124 10.5841C15.9665 10.2565 15.4248 10.2565 15.0789 10.5841L11.4631 14.0084C11.1546 14.3006 10.6715 14.3006 10.3629 14.0084Z"
                                 fill="currentColor"></path>
                         </svg>
-                    </span><span class="ms-1 d-none d-sm-inline">Confirmation</span>
+                    </span><span class="ms-1 d-none d-sm-inline txt_span">Confirmation</span>
                 </a>
             </li>
             @endif
