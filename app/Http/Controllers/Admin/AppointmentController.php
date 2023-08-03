@@ -106,7 +106,7 @@ class AppointmentController extends Controller
                 });
             }
             $payouts = $this->payout($appointment,$lawyer, $payments);
-            // echo "<pre>";print_r($payouts);die;
+            echo "<pre>";print_r($payouts);die;
             return redirect()->back()->with('success', 'Approved  Successfully!');
         } else {
             return redirect()->back()->with('error', 'Lawyer Paypal Email Not found!');

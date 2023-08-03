@@ -138,9 +138,13 @@ class UserController extends Controller
 
         $user->roles()->sync($request->roles);
 
+        if (isset($request->id)) {
+        return redirect()->route('admin.user')->with('success', 'User updated successfully');
+        }
+        else{
+        return redirect()->route('admin.user')->with('success', 'User created successfully');
 
-
-        return redirect()->route('admin.user')->with('success', 'Data updated successfully');
+        }
     }
 
     public function delete_user($id)

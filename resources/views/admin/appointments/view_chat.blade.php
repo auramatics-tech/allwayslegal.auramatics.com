@@ -108,7 +108,7 @@
 
             <!--begin::Title-->
 
-            <h1 class="d-flex align-items-center text-dark fw-bolder fs-3 my-1"> Reply Ticket Enquiry
+            <h1 class="d-flex align-items-center text-dark fw-bolder fs-3 my-1"> Reply
 
                 <!--begin::Description-->
 

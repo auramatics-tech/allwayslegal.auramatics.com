@@ -86,7 +86,7 @@
                         </span>
 
                         <!--end::Svg Icon-->
-                        <input type="text" class="form-control w-250px ps-14" placeholder="Search" value="{{ isset(request()->q) ? request()->q : '' }}" name="q">
+                        <input type="text" class="form-control w-250px ps-14" placeholder="Search booking" value="{{ isset(request()->q) ? request()->q : '' }}" name="q">
 
                     </form>
                     <!--end::Search-->

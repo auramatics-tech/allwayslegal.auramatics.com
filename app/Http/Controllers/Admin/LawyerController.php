@@ -13,6 +13,8 @@ use App\Models\Lawyer;
 
 use App\Models\User;
 
+use App\Models\RoleUser;
+
 use App\Models\Appointment;
 
 use DB;
@@ -24,43 +26,36 @@ class LawyerController extends Controller
 
     public function index(Request $request)
     {
-  
-        
-        $lawyers = Lawyer::select(
-            'lawyers.*',
-            DB::raw("(select cities.name from `cities` where `cities`.`id` = lawyers.city) as city_name"),
-            DB::raw("(select countries.name from `countries` where `countries`.`id` = lawyers.country) as country_name"),
-    
-        )
-            ->when(isset($request->q), function ($query) use ($request) {
-                $query->havingRaw("(first_name LIKE '%" . $request->q . "%' or last_name LIKE '%" . $request->q . "%' or city_name LIKE '%" . $request->q . "%' or country_name LIKE '%" . $request->q . "%' or address LIKE '%" . $request->q . "%'  or law_firm_name LIKE '%" . $request->q . "%'  or law_firm_reg_no LIKE '%" . $request->q . "%')");
-            })->orderby('id', 'desc')->paginate(10);
+        $role_user = RoleUser::where('role_id', 2)->pluck('user_id')->toarray();
 
+        $lawyers = User::when(isset($request->q), function ($query) use ($request) {
+
+            $query->whereRaw("(name LIKE '%" . $request->q . "%' or email LIKE '%" . $request->q . "%')");
+        })->whereIn('id', $role_user)->orderby('id', 'desc')->paginate(10);
 
         return view('admin.lawyer.index', compact('lawyers'));
     }
 
     public function lawyer_detail(Request $request)
     {
-
-
-        $lawyer = Lawyer::select('lawyers.*',  DB::raw("(select users.email from `users` where `users`.`id` = lawyers.user_id) as email"))->where('id', $request->id)->first();
+        // $lawyer = Lawyer::select('lawyers.*',  DB::raw("(select users.email from `users` where `users`.`id` = lawyers.user_id) as email"))->where('user_id', $request->id)->first();
+        $lawyer = User::select('users.*',  'phone', 'gender','languages', 'law_firm_name', 'law_firm_reg_no', 'enrolment_year', 'position', 'lawyer_fee', 'lawyer_fee_tax')
+        ->leftJoin('lawyers', 'lawyers.user_id', 'users.id')
+        ->where('users.id', $request->id)
+        ->first();
 
         return view('admin.lawyer.detail', compact('lawyer'));
+
     }
 
     public function lawyer_bookings(Request $request)
     {
-
-        $booking = Appointment::where('lawyer_id', $request->id)
-            ->when(isset($request->q), function ($query) use ($request) {
+        echo"<pre>";print_r($request->all());die;
+        $booking = Appointment::when(isset($request->q), function ($query) use ($request) {
                 $query->whereRaw("(service_title LIKE '%" . $request->q . "%' or area_name LIKE '%" . $request->q . "%'  or client_name LIKE '%" . $request->q . "%' or case_title LIKE '%" . $request->q . "%'  or booking_code LIKE '%" . $request->q . "%' )");
-            })
-            ->orderBy('id', 'desc')
+            })->where('lawyer_id',$request->lawyer_id)->orderBy('id', 'desc')
             ->paginate(12);
-
-
-
+        // echo"<pre>";print_r($booking);die;
         return view('admin.lawyer.booking', compact('booking'));
     }
 
@@ -80,12 +75,16 @@ class LawyerController extends Controller
     }
     public function change_status($id)
     {
+        // $lawyers = Lawyer::select(
+        //     'lawyers.*',
+        //     DB::raw("(select users.status from `users` where `users`.`id` = lawyers.user_id) as user_status"),
+        //     DB::raw("(select users.id from `users` where `users`.`id` = lawyers.user_id) as userid")
+        // )->where('id', $id)->first();
+        // $lawyer = User::where('status', $lawyers->user_status)->where('id', $lawyers->userid)->first();
 
-        $lawyers = Lawyer::select('lawyers.*',  DB::raw("(select users.status from `users` where `users`.`id` = lawyers.user_id) as user_status")
-        ,  DB::raw("(select users.id from `users` where `users`.`id` = lawyers.user_id) as userid"))->where('id',$id)->first();
+
+        $lawyer = User::find($id);
         // echo "<pre>";print_r($lawyers);die;
-        $lawyer = User::where('status', $lawyers->user_status)->where('id', $lawyers->userid)->first();
-
         if ($lawyer->status == 0) {
             $lawyer->status = 1;
             $msg = 'Approved';
@@ -97,5 +96,15 @@ class LawyerController extends Controller
             $lawyer->save();
             return back()->with('error', 'Lawyer ' . $msg . ' successfully.');
         }
+    }
+    public function delete_lawyer($id)
+
+    {
+
+        $lawyer = Lawyer::Find($id);
+
+        $lawyer->delete();
+
+        return back()->with('success', 'Data deleted successfully');
     }
 }

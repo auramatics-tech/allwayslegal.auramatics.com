@@ -135,4 +135,11 @@ class TicketController extends Controller
         }
         return response(['msg' => $msg, 'last_msg_id' => isset($messages->last()->id) ? $messages->last()->id : $request->last_msg]);
     }
+
+    public function delete_ticket($id)
+    {
+        $ticket = Enquiry::Find($id);
+        $ticket->delete();
+        return back()->with('success', 'Data deleted successfully');
+    }
 }

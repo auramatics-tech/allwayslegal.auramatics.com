@@ -49,7 +49,13 @@ class ServiceController extends Controller
     {
         // echo "<pre>";print_r($request->all());die;
         $this->validate($request, [
-            'title' => ['required', 'string', 'max:255']
+            'title' => ['required', 'string', 'max:255'],
+            'price' => ['required'],
+            'service_fee' => ['required'],
+            'service_fee_tax' => ['required'],
+            'legal_fee' => ['required'],
+            'legal_fee_tax' => ['required'],
+            'description' => ['required'],
         ]);
         if (isset($request->id)) {
             $service = Service::Find($request->id);
@@ -72,8 +78,11 @@ class ServiceController extends Controller
         
         $service->description = $request->description;
         $service->save();
-
-        return redirect()->route('admin.service')->with('success', 'Data updated successfully');
+        if (isset($request->id)) {
+            return redirect()->route('admin.service')->with('success', 'Service created successfully');
+        } else {
+            return redirect()->route('admin.service')->with('success', 'Service updated successfully');   
+        }     
     }
     public function delete_service($id)
     {
