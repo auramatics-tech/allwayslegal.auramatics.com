@@ -290,7 +290,7 @@
         }
     }
     $(document).ready(function() {
-        setInterval(fetch_msg, 1000);
+        setInterval(fetch_msg, 3000);
     });
 
 

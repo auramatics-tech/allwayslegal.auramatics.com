@@ -131,11 +131,11 @@
 
                                         S.no</th>
 
-                                    <th class="min-w-100px">
+                                    <th class="min-w-125px">
 
                                         Name</th>
 
-                                    <th class="min-w-100px">
+                                    <th class="min-w-125px">
 
                                         Email</th>
 
@@ -143,7 +143,7 @@
 
                                         Created At</th>
 
-                                    <th class="text-end min-w-50px sorting_disabled" rowspan="1" colspan="1" aria-label="Actions" style="width: 100px;">Actions</th>
+                                    <th class="text-end min-w-125px sorting_disabled" rowspan="1" colspan="1" aria-label="Actions" style="width: 100px;">Actions</th>
 
                                 </tr>
 

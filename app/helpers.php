@@ -7,6 +7,8 @@ use App\Models\TicketChat;
 use App\Models\RoleUser;
 use App\Models\TicketMessageView;
 use App\Models\MessageView;
+use App\Models\Lawyer;
+use App\Models\Client;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 // use Log;
@@ -38,16 +40,21 @@ function getMessageCount($id)
 
 function getTotalMessageCount()
 {
-    $user = Auth::user();
-    $message_appointments = Message::where('sender_id', '!=', $user->id)->pluck('appointment_id')->toArray();
+    $user_id = Auth::id();
+    $lawyer_id = Lawyer::where('user_id', Auth::user()->id)->first();
+    // echo"<pre>";print_r($lawyer_id);die;
+    $client_id = Client::where('user_id', Auth::user()->id)->first();
+    $appointments = Appointment::where('lawyer_id', $lawyer_id)->where('client_id', $client_id)->pluck('id')->toArray();
+    $message_appointments = Message::where('sender_id', '!=', $user_id)->whereIn('appointment_id',$appointments)->pluck('appointment_id')->toArray();
     $unique_appointments = array_unique($message_appointments);
+    //  echo "<pre>";print_r($message_appointments);die;
     $total_msg_count = 0;
 
     foreach ($unique_appointments as $appointment_id) {
         $view = MessageView::where('appointment_id', $appointment_id)->pluck('msg_id')->toArray();
         $chat_count = Message::whereNotIn('id', $view)
             ->where('appointment_id', $appointment_id)
-            ->where('sender_id', '!=', $user->id)
+            ->where('sender_id', '!=', $user_id)
             ->count();
 
         $total_msg_count += $chat_count;
@@ -70,6 +77,7 @@ function getTotalTicketMessageCount()
     $user_id = Auth::id();
     $tickets = Enquiry::where('user_id', $user_id)->pluck('id')->toArray();
     $message_tickets = TicketChat::where('user_id', '!=', $user_id)->whereIn('ticket_id',$tickets)->pluck('ticket_id')->toArray();
+    // echo "<pre>";print_r($message_tickets);die;
     $unique_tickets = array_unique($message_tickets);
     $total_msg_count = 0;
 
@@ -81,12 +89,33 @@ function getTotalTicketMessageCount()
             ->count();
   
         $total_msg_count += $chat_count;
-        // echo "<pre>";print_r($total_msg_count);die;
+      
     }
 
     return $total_msg_count;
 }
+function getAdminTotalTicketMessageCount()
+{
+    $user_id = Auth::id();
+    $tickets = Enquiry::pluck('id')->toArray();
+    $message_tickets = TicketChat::whereIn('ticket_id',$tickets)->pluck('ticket_id')->toArray();
+    // echo "<pre>";print_r($tickets);die;
+    $unique_tickets = array_unique($message_tickets);
+    $total_msg_count = 0;
 
+    foreach ($unique_tickets as $ticket_id) {
+        $view = TicketMessageView::where('ticket_id', $ticket_id)->pluck('msg_id')->toArray();
+        $chat_count = TicketChat::whereNotIn('id', $view)
+            ->where('ticket_id', $ticket_id)
+            ->where('user_id', '!=', $user_id)
+            ->count();
+  
+        $total_msg_count += $chat_count;
+      
+    }
+
+    return $total_msg_count;
+}
 
 
 

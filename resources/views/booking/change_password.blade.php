@@ -22,49 +22,49 @@
             </div>
 
             <div class="card-body pt-3">
-
                 <form action="{{ route('dashboard.change_password_save') }}" method="post">
-
                     @csrf
-
-                    <div class="form-group  mb-3 ms-1">
-
-                        <label class="mb-3">Current Password
-
-                            <span class="text-danger">*</span></label>
-
-                        <input type="password" name="current_password" id="current_password" class="form-control"
-                            placeholder="Current Password" required />
-
-                    </div>
-
+            
                     <div class="form-group mb-3 ms-1">
-
-                        <label class="mb-3">New Password
-
-                            <span class="text-danger">*</span></label>
-
-                        <input type="password" name="new_password" id="new_password" class="form-control"
-                            placeholder="New Password" required />
-
+                        <label class="mb-3">Current Password <span class="text-danger">*</span></label>
+                        <input type="password" name="current_password" id="current_password"
+                            class="form-control form-control-item @error('current_password') is-invalid @enderror"
+                            placeholder="Current Password" />
+                        @error('current_password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
                     </div>
-
+            
+                    <div class="form-group mb-3 ms-1">
+                        <label class="mb-3">New Password <span class="text-danger">*</span></label>
+                        <input type="password" name="new_password" id="new_password"
+                            class="form-control form-control-item @error('new_password') is-invalid @enderror"
+                            placeholder="New Password" />
+                        @error('new_password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
+                    </div>
+            
                     <div class="form-group mb-4 ms-1">
-
-                        <label class="mb-3">Confirm Password
-
-                            <span class="text-danger">*</span></label>
-
-                        <input type="password" name="confirm_password" id="confirm_password" class="form-control"
-                            placeholder="Confirm Password" required />
-
+                        <label class="mb-3">Confirm Password <span class="text-danger">*</span></label>
+                        <input type="password" name="confirm_password" id="confirm_password"
+                            class="form-control form-control-item @error('confirm_password') is-invalid @enderror"
+                            placeholder="Confirm Password" />
+                        @error('confirm_password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
                     </div>
-
+            
                     <button type="submit" class="btn btn-primary mr-2">Save</button>
-
                 </form>
-
             </div>
+            
 
         </div>
     </div>

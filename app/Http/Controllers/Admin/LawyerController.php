@@ -50,10 +50,12 @@ class LawyerController extends Controller
 
     public function lawyer_bookings(Request $request)
     {
-        echo"<pre>";print_r($request->all());die;
+
+        $lawyer_id = Lawyer::where('user_id',$request->id)->first();
+        
         $booking = Appointment::when(isset($request->q), function ($query) use ($request) {
                 $query->whereRaw("(service_title LIKE '%" . $request->q . "%' or area_name LIKE '%" . $request->q . "%'  or client_name LIKE '%" . $request->q . "%' or case_title LIKE '%" . $request->q . "%'  or booking_code LIKE '%" . $request->q . "%' )");
-            })->where('lawyer_id',$request->lawyer_id)->orderBy('id', 'desc')
+            })->where('lawyer_id', optional($lawyer_id)->id)->orderBy('id', 'desc')
             ->paginate(12);
         // echo"<pre>";print_r($booking);die;
         return view('admin.lawyer.booking', compact('booking'));
@@ -62,11 +64,14 @@ class LawyerController extends Controller
     public function lawyer_upcoming_bookings(Request $request)
     {
 
+        $lawyer_id = Lawyer::where('user_id',$request->id)->first();
+        // echo"<pre>";print_r($request->all());die;
         $upcoming_bookings = Appointment::when(isset($request->q), function ($query) use ($request) {
             $query->whereRaw("(service_title LIKE '%" . $request->q . "%' or area_name LIKE '%" . $request->q . "%'  or client_name LIKE '%" . $request->q . "%' or case_title LIKE '%" . $request->q . "%'  or booking_code LIKE '%" . $request->q . "%' )");
-        })->where('lawyer_id', $request->id)->whereDate('date', '>', now())
-            ->orderBy('id', 'desc')
-            ->paginate(12);
+        })->where('lawyer_id', optional($lawyer_id)->id)
+        ->whereDate('date', '>', now())
+        ->orderBy('id', 'desc')
+        ->paginate(12);
 
         // echo "<pre>";print_r($upcoming_bookings);die;
 
