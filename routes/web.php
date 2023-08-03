@@ -11,7 +11,7 @@ use App\Http\Controllers\Lawyer\LawyerAppointmentController;
 use App\Http\Controllers\Lawyer\LawyerScheduleController;
 use App\Http\Controllers\Lawyer\LawyerProfileController;
 use App\Http\Controllers\Lawyer\LawyerTicketController;
-
+ 
 
 use App\Http\Controllers\Client\ClientController;
 use App\Http\Controllers\Client\ClientProfileController;

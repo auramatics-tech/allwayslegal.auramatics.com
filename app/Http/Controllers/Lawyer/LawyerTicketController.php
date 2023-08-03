@@ -8,6 +8,8 @@ use App\Models\Enquiry;
 
 use App\Models\TicketChat;
 
+use App\Models\TicketMessageView;
+
 use Illuminate\Http\Request;
 
 use Carbon;
@@ -22,7 +24,7 @@ class LawyerTicketController extends Controller
     public function index()
     {
 
-        $data = Enquiry::where('user_id',Auth::id())->orderBy('id', 'desc')->paginate(12);
+        $data = Enquiry::where('user_id', Auth::id())->orderBy('id', 'desc')->paginate(12);
         return view('lawyer.ticket-enquiry.index', compact('data'));
     }
 
@@ -44,7 +46,7 @@ class LawyerTicketController extends Controller
 
         $data = new Enquiry();
         $data->user_id = Auth::user()->id;
-        $data->user_name = Auth::user()->lawyer->first_name.' '.Auth::user()->lawyer->last_name;
+        $data->user_name = Auth::user()->lawyer->first_name . ' ' . Auth::user()->lawyer->last_name;
         $data->title = $request->title;
         $data->description = $request->description;
         $data->save();
@@ -55,8 +57,18 @@ class LawyerTicketController extends Controller
     }
     public function join_chat($id)
     {
-
         $enquiry = Enquiry::Find(base64_decode($id));
+        $view = TicketMessageView::where('ticket_id',base64_decode($id))->pluck('msg_id')->toArray();
+        $chat =  TicketChat::whereNotIn('id',$view)->where('ticket_id',base64_decode($id))->where('user_id', '!=',Auth::id())->get();
+        if (!empty($chat) && count($chat)) {
+            foreach ($chat as $c) {
+                $c_view = new TicketMessageView();
+                $c_view->ticket_id = base64_decode($id);
+                $c_view->msg_id = $c->id;
+                $c_view->user_id = Auth::id();
+                $c_view->save();
+            }
+        }
         $messages = TicketChat::select('ticket_chat.*', DB::raw("(select users.name from users where users.id = ticket_chat.user_id) as user_name"))->where('ticket_id', $enquiry->id)->get();
         return view('lawyer.ticket-enquiry.ticket_chat', compact('enquiry', 'messages'));
     }
@@ -67,6 +79,7 @@ class LawyerTicketController extends Controller
         $chat->message = $request->msg_box;
         $chat->ticket_id = $request->ticket_id;
         $chat->user_id = Auth::id();
+       
         if ($request->image) {
             $chat->type = 'image';
         } else {
@@ -82,13 +95,13 @@ class LawyerTicketController extends Controller
 
         $chat->save();
 
-         $msg = '<div class="row no-gutters" style="margin: 10px;">
+        $msg = '<div class="row no-gutters" style="margin: 10px;">
         <div class="col-xl-5 col-lg-5 col-md-8 col-11 ms-auto send">
             <div class="chat-bubble chat-bubble--right">
                 <p class="user_name">' . ucfirst(Auth::user()->name) . '</p>';
 
         if ($chat->type == 'text') {
-            $msg .=  $chat->message ;
+            $msg .=  $chat->message;
         } else {
             $msg .= '<a href="' . asset('query_image/' . $chat->message) . '" target="_blank" class="card p-1"><i class=" o mr-1" aria-hidden="true"></i>' . $chat->message . '</a>';
         }
@@ -103,13 +116,14 @@ class LawyerTicketController extends Controller
         return response()->json(['msg' => $msg, 'last_msg_id' => $chat->id]);
     }
 
-    public function fetch_msg(Request $request){
-       
+    public function fetch_msg(Request $request)
+    {
+
         $messages = TicketChat::select('ticket_chat.*', DB::raw("(select users.name from users where users.id = ticket_chat.user_id) as user_name"))
-        ->when(isset($request->last_msg), function ($query) use ($request) {
-            $query->where('id','>',$request->last_msg);
-        })->where('ticket_id',$request->ticket_id)->where('user_id','!=',Auth::id())->get();
-       
+            ->when(isset($request->last_msg), function ($query) use ($request) {
+                $query->where('id', '>', $request->last_msg);
+            })->where('ticket_id', $request->ticket_id)->where('user_id', '!=', Auth::id())->get();
+
         $msg = '';
         if (count($messages)) {
             foreach ($messages as $message) {
@@ -131,6 +145,6 @@ class LawyerTicketController extends Controller
             </div>';
             }
         }
-        return response(['msg'=>$msg,'last_msg_id'=>isset($messages->last()->id) ? $messages->last()->id : '']);
+        return response(['msg' => $msg, 'last_msg_id' => isset($messages->last()->id) ? $messages->last()->id : '']);
     }
 }

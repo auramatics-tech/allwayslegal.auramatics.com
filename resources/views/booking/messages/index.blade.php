@@ -58,7 +58,7 @@
                                         <a href="{{ route('chat', $appointment->id) }}" class="btn"
                                             style="background:#337ab7;color:#fff"><b><i class="fa fa-reply"></i></b></a>
                                         @php$messageCount = getMessageCount($appointment->id);
-                                            
+
                                         @endphp
                                         @if (!empty($messageCount))
                                             <span class="badge rounded-pill bg-warning ms-1">
