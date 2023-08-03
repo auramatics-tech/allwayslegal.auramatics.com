@@ -1,36 +1,31 @@
 @extends('layouts.dashboard')
 
 @section('content')
-<style>
-    .submit_next_btn:disabled {
-        opacity: 0.5;
-}
-</style>
-    <div class="container">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-3 px-sm-2 px-0 col_sidebar">
-                @include('booking.includes.sidebar')
+    <style>
+        .submit_next_btn:disabled {
+            opacity: 0.5;
+        }
+    </style>
+
+    <div class="py-4 right_width">
+        <form class="col-md-12 right-section p-3" action="{{ route('save_booking_data') }}" method="post"
+            enctype="multipart/form-data">
+            @csrf
+            <div id="case_summary">
+                @include('booking.includes.case_summary')
             </div>
-            <div class="col py-lg-5 py-4 right_width">
-                <form class="col-md-12 right-section p-3" action="{{ route('save_booking_data') }}" method="post"
-                    enctype="multipart/form-data">
-                    @csrf
-                    <div id="case_summary">
-                        @include('booking.includes.case_summary')
-                    </div>
-                    <div class="d-none" id="legal_needs">
-                        @include('booking.includes.legal_need')
-                        <span class="text-danger errorMsg"></span>
-                        <div class="mt-3 d-grid gap-1 d-flex justify-content-md-end">
-                            <div class="btn-style py-2"><button type="Submit" class="btn-sm ms-auto py-1 px-3 submit_next_btn">Next<i
-                                        class="fa fa-chevron-right ms-2"></i></button></div>
-                        </div>
-                    </div>
-                </form>
+            <div class="d-none" id="legal_needs">
+                @include('booking.includes.legal_need')
+                <span class="text-danger errorMsg"></span>
+                <div class="mt-3 d-grid gap-1 d-flex justify-content-md-end">
+                    <div class="btn-style py-2"><button type="Submit"
+                            class="btn-sm ms-auto py-1 px-3 submit_next_btn">Next<i
+                                class="fa fa-chevron-right ms-2"></i></button></div>
+                </div>
             </div>
-        </div>
-        <div id="detail_modal"></div>
+        </form>
     </div>
+    <div id="detail_modal"></div>
 @endsection
 @section('script')
     <script>
@@ -59,16 +54,16 @@
             }
         })
         $(document).on('click', 'input.check_btn_enable', function() {
-            if($(this).prop('checked')){
-                    $('.submit_next_btn').prop('disabled', false)
-                }else{
-                    $('.submit_next_btn').prop('disabled', true)
-                }
+            if ($(this).prop('checked')) {
+                $('.submit_next_btn').prop('disabled', false)
+            } else {
+                $('.submit_next_btn').prop('disabled', true)
+            }
         });
         $(document).on('change', '#area_select', function() {
 
             var area_id = $(this).val();
-            var areaName =  $(this).find('option[value="' + area_id + '"]').attr('data-name');
+            var areaName = $(this).find('option[value="' + area_id + '"]').attr('data-name');
             $.ajax({
                 url: "{{ route('get_services') }}",
                 method: "get",
@@ -83,7 +78,8 @@
 
                     $.each(data, function(k, v) {
 
-                        html += '<option  value="' + v.id + '"  data-title="' + v.title + '">' + v.title + '</option>';
+                        html += '<option  value="' + v.id + '"  data-title="' + v.title + '">' +
+                            v.title + '</option>';
 
                     })
 

@@ -17,7 +17,11 @@ footer {
   background: rgba(241, 241, 241, 0.7);
   height: 100%;
   position: fixed;
-  top: 135px;
+  /* top: 135px; */
+  top: 88px;
+}
+.db_sidebar ul{
+ margin-top: 60px;
 }
 .top_pos {
   top: 90px;
@@ -587,3 +591,40 @@ color: #50cd89;
 .chat-bubble{
   color:#fff !important
 }
+.top_name_header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left:0;
+  z-index: 2;
+}
+.px_30px{
+  padding-left:30px;
+  padding-right:30px;
+}
+/* sidebar css start */
+#content{
+  width: calc(100% - 310px);
+  margin-left: auto;
+}
+#content.fullwidth{
+  width: calc(100% - 95px);
+}
+.db_sidebar.active {
+  width: 95px;
+}
+#toggle_btn{
+  width:35px;
+  height:35px;
+  padding: 0;
+}
+#toggle_btn i{
+  margin-top:5px;
+  font-size: 18px;
+}
+@media screen and (max-width: 575px) {
+  #content{
+    width: calc(100% - 56px);
+  } 
+}
+/* sidebar css end */

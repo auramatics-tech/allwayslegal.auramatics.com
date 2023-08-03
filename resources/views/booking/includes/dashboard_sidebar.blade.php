@@ -1,51 +1,52 @@
-<div class="db_sidebar py-lg-4 py-3">
+<div class="db_sidebar py-lg-4 py-3" id="dashboard_sidebar">
     <div class="d-flex flex-column align-items-center align-items-sm-start px-lg-3 px-2 pt-2 text-white min-vh-100">
         <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-            <li class="nav-item">
-                <a href="{{ route('client.dashboard') }}"
-                    class="nav-link @if (Route::is('lawyer.dashboard')) active @endif align-middle">
-                    <span class="svg-icon svg-icon-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none">
-                            <rect x="2" y="2" width="9" height="9" rx="2"
-                                fill="currentColor"></rect>
-                            <rect opacity="0.3" x="13" y="2" width="9" height="9"
-                                rx="2" fill="currentColor"></rect>
-                            <rect opacity="0.3" x="13" y="13" width="9" height="9"
-                                rx="2" fill="currentColor"></rect>
-                            <rect opacity="0.3" x="2" y="13" width="9" height="9"
-                                rx="2" fill="currentColor"></rect>
-                        </svg>
-                    </span>
-                    <span class="ms-1 d-none d-sm-inline">Dashboard</span>
-                </a>
-            </li>
-            <li>
-                <a href="@if (Auth::user()->client) {{ route('client.appointment.index') }} @else {{ route('lawyer.appointment.index') }} @endif"
-                    class="nav-link align-middle @if (Route::is('client.appointment.index') || Route::is('client.appointment.detail')) active @endif">
-                    <span class="svg-icon svg-icon-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none">
-                            <path opacity="0.3"
-                                d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z"
-                                fill="currentColor"></path>
-                            <path d="M20 8L14 2V6C14 7.10457 14.8954 8 16 8H20Z" fill="currentColor"></path>
-                            <path
-                                d="M10.3629 14.0084L8.92108 12.6429C8.57518 12.3153 8.03352 12.3153 7.68761 12.6429C7.31405 12.9967 7.31405 13.5915 7.68761 13.9453L10.2254 16.3488C10.6111 16.714 11.215 16.714 11.6007 16.3488L16.3124 11.8865C16.6859 11.5327 16.6859 10.9379 16.3124 10.5841C15.9665 10.2565 15.4248 10.2565 15.0789 10.5841L11.4631 14.0084C11.1546 14.3006 10.6715 14.3006 10.3629 14.0084Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </span>
-                    <span class="ms-1 d-none d-sm-inline">Appointments
-                        @php $appointmentsCount = getAppointmentsCount(); @endphp
-                        @if (!empty($appointmentsCount))
-                            <span class="badge rounded-pill bg-warning ms-1">
-                                {{ $appointmentsCount }}
-                            </span>
-                        @endif
-                    </span>
-                </a>
-            </li>
             @if (Auth::user()->lawyer)
+                <li class="nav-item">
+                    <a href="{{ route('lawyer.dashboard') }}"
+                        class="nav-link @if (Route::is('lawyer.dashboard') || Route::is('lawyer.profile') ) active @endif align-middle">
+                        <span class="svg-icon svg-icon-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <rect x="2" y="2" width="9" height="9" rx="2"
+                                    fill="currentColor"></rect>
+                                <rect opacity="0.3" x="13" y="2" width="9" height="9"
+                                    rx="2" fill="currentColor"></rect>
+                                <rect opacity="0.3" x="13" y="13" width="9" height="9"
+                                    rx="2" fill="currentColor"></rect>
+                                <rect opacity="0.3" x="2" y="13" width="9" height="9"
+                                    rx="2" fill="currentColor"></rect>
+                            </svg>
+                        </span>
+                        <span class="ms-1 d-none d-sm-inline txt_span">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('lawyer.appointment.index') }}"
+                        class="position-relative nav-link align-middle @if (Route::is('lawyer.appointment.index') || Route::is('lawyer.appointment.detail')) active @endif">
+                        <span class="svg-icon svg-icon-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path opacity="0.3"
+                                    d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z"
+                                    fill="currentColor"></path>
+                                <path d="M20 8L14 2V6C14 7.10457 14.8954 8 16 8H20Z" fill="currentColor"></path>
+                                <path
+                                    d="M10.3629 14.0084L8.92108 12.6429C8.57518 12.3153 8.03352 12.3153 7.68761 12.6429C7.31405 12.9967 7.31405 13.5915 7.68761 13.9453L10.2254 16.3488C10.6111 16.714 11.215 16.714 11.6007 16.3488L16.3124 11.8865C16.6859 11.5327 16.6859 10.9379 16.3124 10.5841C15.9665 10.2565 15.4248 10.2565 15.0789 10.5841L11.4631 14.0084C11.1546 14.3006 10.6715 14.3006 10.3629 14.0084Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </span>
+                        <span class="ms-1 d-none d-sm-inline txt_span">Appointments
+
+                            @php $appointmentsCount = getAppointmentsCount(); @endphp
+                            @if (!empty($appointmentsCount))
+                                <span class="badge rounded-pill bg-warning ms-1">
+                                    {{ $appointmentsCount }}
+                                </span>
+                            @endif
+                        </span>
+                    </a>
+                </li>
                 <li>
                     <a href="{{ route('lawyer.schedules') }}"
                         class="nav-link align-middle @if (Route::is('lawyer.schedules')) active @endif">
@@ -63,7 +64,7 @@
                                     fill="currentColor"></path>
                             </svg>
                         </span>
-                        <span class="ms-1 d-none d-sm-inline">Time Slots</span>
+                        <span class="ms-1 d-none d-sm-inline txt_span">Time Slots</span>
                     </a>
                 </li>
                 <li>
@@ -80,7 +81,7 @@
                                     fill="currentColor"></path>
                             </svg>
                         </span>
-                        <span class="ms-1 d-none d-sm-inline">Practice Areas</span>
+                        <span class="ms-1 d-none d-sm-inline txt_span">Practice Areas</span>
                     </a>
                 </li>
                 <li>
@@ -99,13 +100,58 @@
                                     d="M18.1 21H5.9C5.4 21 4.9 20.6 4.8 20.1L3 13H21L19.2 20.1C19.1 20.6 18.6 21 18.1 21ZM13 18V15C13 14.4 12.6 14 12 14C11.4 14 11 14.4 11 15V18C11 18.6 11.4 19 12 19C12.6 19 13 18.6 13 18ZM17 18V15C17 14.4 16.6 14 16 14C15.4 14 15 14.4 15 15V18C15 18.6 15.4 19 16 19C16.6 19 17 18.6 17 18ZM9 18V15C9 14.4 8.6 14 8 14C7.4 14 7 14.4 7 15V18C7 18.6 7.4 19 8 19C8.6 19 9 18.6 9 18Z"
                                     fill="currentColor"></path>
                             </svg>
-                        </span><span class="ms-1 d-none d-sm-inline">Services</span>
+                        </span><span class="ms-1 d-none d-sm-inline txt_span">Services</span>
+                    </a>
+                </li>
+            @else
+                <li class="nav-item">
+                    <a href="{{ route('client.dashboard') }}"
+                        class="nav-link @if (Route::is('client.dashboard') || Route::is('client.profile')) active @endif align-middle">
+                        <span class="svg-icon svg-icon-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="9" height="9" rx="2"
+                                    fill="currentColor"></rect>
+                                <rect opacity="0.3" x="13" y="2" width="9" height="9"
+                                    rx="2" fill="currentColor"></rect>
+                                <rect opacity="0.3" x="13" y="13" width="9" height="9"
+                                    rx="2" fill="currentColor"></rect>
+                                <rect opacity="0.3" x="2" y="13" width="9" height="9"
+                                    rx="2" fill="currentColor"></rect>
+                            </svg>
+                        </span>
+                        <span class="ms-1 d-none d-sm-inline txt_span">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="@if (Auth::user()->client) {{ route('client.appointment.index') }} @else {{ route('lawyer.appointment.index') }} @endif"
+                        class="nav-link align-middle @if (Route::is('client.appointment.index') || Route::is('client.appointment.detail')) active @endif">
+                        <span class="svg-icon svg-icon-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
+                                <path opacity="0.3"
+                                    d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z"
+                                    fill="currentColor"></path>
+                                <path d="M20 8L14 2V6C14 7.10457 14.8954 8 16 8H20Z" fill="currentColor"></path>
+                                <path
+                                    d="M10.3629 14.0084L8.92108 12.6429C8.57518 12.3153 8.03352 12.3153 7.68761 12.6429C7.31405 12.9967 7.31405 13.5915 7.68761 13.9453L10.2254 16.3488C10.6111 16.714 11.215 16.714 11.6007 16.3488L16.3124 11.8865C16.6859 11.5327 16.6859 10.9379 16.3124 10.5841C15.9665 10.2565 15.4248 10.2565 15.0789 10.5841L11.4631 14.0084C11.1546 14.3006 10.6715 14.3006 10.3629 14.0084Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </span>
+                        <span class="ms-1 d-none d-sm-inline txt_span">Appointments
+                            @php $appointmentsCount = getAppointmentsCount(); @endphp
+                            @if (!empty($appointmentsCount))
+                                <span class="badge rounded-pill bg-warning ms-1">
+                                    {{ $appointmentsCount }}
+                                </span>
+                            @endif
+                        </span>
                     </a>
                 </li>
             @endif
             <li>
-                <a href="{{ route('messages.index') }}"
-                    class="nav-link align-middle @if (Route::is('messages.index')) active @endif">
+                <a href="{{ route('dashboard.messages.index') }}"
+                    class="nav-link align-middle @if (Route::is('dashboard.messages.index')) active @endif">
                     <span class="svg-icon svg-icon-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             fill="none">
@@ -117,13 +163,7 @@
                             <rect x="6" y="7" width="12" height="2" rx="1"
                                 fill="currentColor"></rect>
                         </svg>
-                    </span><span class="ms-1 d-none d-sm-inline">Messages</span>
-                    @php $TotalMessageCount = getTotalMessageCount(); @endphp
-                    @if (!empty($TotalMessageCount))
-                        <span class="badge rounded-pill bg-warning ms-1">
-                            {{ $TotalMessageCount }}
-                        </span>
-                    @endif
+                    </span><span class="ms-1 d-none d-sm-inline txt_span">Messages</span>
                 </a>
             </li>
             <li>
@@ -138,12 +178,12 @@
                             <path d="M12 4C11.4 4 11 3.6 11 3V2H13V3C13 3.6 12.6 4 12 4Z" fill="currentColor">
                             </path>
                         </svg>
-                    </span><span class="ms-1 d-none d-sm-inline">Reviews</span>
+                    </span><span class="ms-1 d-none d-sm-inline txt_span">Reviews</span>
                 </a>
             </li>
             <li>
-                <a href="{{ route('change_password') }}"
-                    class="nav-link align-middle @if (Route::is('change_password')) active @endif">
+                <a href="{{ route('dashboard.change_password') }}"
+                    class="nav-link align-middle @if (Route::is('dashboard.change_password')) active @endif">
                     <span class="svg-icon svg-icon-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             fill="none">
@@ -155,9 +195,21 @@
                                 fill="currentColor"></path>
                         </svg>
                     </span>
-                    <span class="ms-1 d-none d-sm-inline">Change Password</span>
+                    <span class="ms-1 d-none d-sm-inline txt_span">Change Password</span>
                 </a>
             </li>
+            @if (Auth::user()->lawyer)
+            <li>
+                <a href="{{ route('lawyer.ticket_enquiries') }}" class="nav-link align-middle @if (Route::is('lawyer.ticket_enquiries')) active @endif">
+                    <span class="svg-icon svg-icon-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M13 5.91517C15.8 6.41517 18 8.81519 18 11.8152C18 12.5152 17.9 13.2152 17.6 13.9152L20.1 15.3152C20.6 15.6152 21.4 15.4152 21.6 14.8152C21.9 13.9152 22.1 12.9152 22.1 11.8152C22.1 7.01519 18.8 3.11521 14.3 2.01521C13.7 1.91521 13.1 2.31521 13.1 3.01521V5.91517H13Z" fill="currentColor"></path>
+                            <path opacity="0.3" d="M19.1 17.0152C19.7 17.3152 19.8 18.1152 19.3 18.5152C17.5 20.5152 14.9 21.7152 12 21.7152C9.1 21.7152 6.50001 20.5152 4.70001 18.5152C4.30001 18.0152 4.39999 17.3152 4.89999 17.0152L7.39999 15.6152C8.49999 16.9152 10.2 17.8152 12 17.8152C13.8 17.8152 15.5 17.0152 16.6 15.6152L19.1 17.0152ZM6.39999 13.9151C6.19999 13.2151 6 12.5152 6 11.8152C6 8.81517 8.2 6.41515 11 5.91515V3.01519C11 2.41519 10.4 1.91519 9.79999 2.01519C5.29999 3.01519 2 7.01517 2 11.8152C2 12.8152 2.2 13.8152 2.5 14.8152C2.7 15.4152 3.4 15.7152 4 15.3152L6.39999 13.9151Z" fill="currentColor"></path>
+                        </svg>
+                    </span><span class="ms-1 d-none d-sm-inline txt_span">Ticket Enquiry</span>
+                </a>
+            </li>
+            @else
             <li>
                 <a href="{{ route('client.ticket_enquiry') }}"
                     class="nav-link align-middle @if (Route::is('client.ticket_enquiry')) active @endif">
@@ -171,15 +223,10 @@
                                 d="M19.1 17.0152C19.7 17.3152 19.8 18.1152 19.3 18.5152C17.5 20.5152 14.9 21.7152 12 21.7152C9.1 21.7152 6.50001 20.5152 4.70001 18.5152C4.30001 18.0152 4.39999 17.3152 4.89999 17.0152L7.39999 15.6152C8.49999 16.9152 10.2 17.8152 12 17.8152C13.8 17.8152 15.5 17.0152 16.6 15.6152L19.1 17.0152ZM6.39999 13.9151C6.19999 13.2151 6 12.5152 6 11.8152C6 8.81517 8.2 6.41515 11 5.91515V3.01519C11 2.41519 10.4 1.91519 9.79999 2.01519C5.29999 3.01519 2 7.01517 2 11.8152C2 12.8152 2.2 13.8152 2.5 14.8152C2.7 15.4152 3.4 15.7152 4 15.3152L6.39999 13.9151Z"
                                 fill="currentColor"></path>
                         </svg>
-                    </span><span class="ms-1 d-none d-sm-inline">Ticket Enquiry</span>
-                    @php $TotalTicketMessageCount = getTotalTicketMessageCount(); @endphp
-                    @if(!empty($TotalTicketMessageCount))
-                    <span class="badge rounded-pill bg-warning ms-1">
-                        {{ $TotalTicketMessageCount }}
-                    </span>
-                    @endif
+                    </span><span class="ms-1 d-none d-sm-inline txt_span">Ticket Enquiry</span>
                 </a>
             </li>
+            @endif
         </ul>
 
     </div>
