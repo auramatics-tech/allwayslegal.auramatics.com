@@ -51,6 +51,9 @@ class LoginController extends Controller
        $fieldType = User::where('email', $input['email'])->first();
       
        if (isset($fieldType->id)) {
+        if(!isset($fieldType->email_verified_at)){
+            return redirect('email/verify')->with('error','Please verify your email address.');
+        }
            $role = RoleUser::where('user_id',$fieldType->id)->first();
  
            if(isset($role->role_id) && $role->role_id != 1){

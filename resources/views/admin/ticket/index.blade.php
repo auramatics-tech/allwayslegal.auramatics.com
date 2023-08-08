@@ -250,13 +250,18 @@
                                                                 class="badge rounded-pill bg-warning ms-1">{{ $ticketMessageCount }}</span>
                                                         @endif
                                                     </a>
-                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-150px py-4" data-kt-menu="true">
+                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-150px py-4"
+                                                        data-kt-menu="true">
                                                         <div class="menu-item px-3">
                                                             <a href="{{ route('admin.join_chat', base64_encode($ticket->id)) }}"
                                                                 title="Set Reply" class="menu-link px-3">Reply</a>
                                                         </div>
+                                                        <div class="menu-item px-3">
+                                                            <a href="javascript:" rel="{{ $ticket->id }}"
+                                                                rel1="delete-ticket"
+                                                                class="deleteRecord menu-link px-3">Delete</a>
+                                                        </div>
                                                     </div>
-
                                                 </td>
                                             </tr>
                                         @endforeach
@@ -272,31 +277,31 @@
 
                         <!-- <div class="row">
 
-                                                    <div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start"></div>
+                                                        <div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start"></div>
 
-                                                    <div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end">
+                                                        <div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end">
 
-                                                        <div class="dataTables_paginate paging_simple_numbers" id="kt_table_services_paginate">
+                                                            <div class="dataTables_paginate paging_simple_numbers" id="kt_table_services_paginate">
 
-                                                            <ul class="pagination">
+                                                                <ul class="pagination">
 
-                                                                <li class="paginate_button page-item previous disabled" id="kt_table_services_previous"><a href="#" aria-controls="kt_table_services" data-dt-idx="0" tabindex="0" class="page-link"><i class="previous"></i></a></li>
+                                                                    <li class="paginate_button page-item previous disabled" id="kt_table_services_previous"><a href="#" aria-controls="kt_table_services" data-dt-idx="0" tabindex="0" class="page-link"><i class="previous"></i></a></li>
 
-                                                                <li class="paginate_button page-item active"><a href="#" aria-controls="kt_table_services" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                                                                    <li class="paginate_button page-item active"><a href="#" aria-controls="kt_table_services" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
 
-                                                                <li class="paginate_button page-item "><a href="#" aria-controls="kt_table_services" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                                                                    <li class="paginate_button page-item "><a href="#" aria-controls="kt_table_services" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
 
-                                                                <li class="paginate_button page-item "><a href="#" aria-controls="kt_table_services" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+                                                                    <li class="paginate_button page-item "><a href="#" aria-controls="kt_table_services" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
 
-                                                                <li class="paginate_button page-item next" id="kt_table_services_next"><a href="#" aria-controls="kt_table_services" data-dt-idx="4" tabindex="0" class="page-link"><i class="next"></i></a></li>
+                                                                    <li class="paginate_button page-item next" id="kt_table_services_next"><a href="#" aria-controls="kt_table_services" data-dt-idx="4" tabindex="0" class="page-link"><i class="next"></i></a></li>
 
-                                                            </ul>
+                                                                </ul>
+
+                                                            </div>
 
                                                         </div>
 
-                                                    </div>
-
-                                                </div> -->
+                                                    </div> -->
 
                         <div class="row text-end">
 
@@ -347,7 +352,9 @@
                     _token: "{{ csrf_token() }}"
                 },
                 success: function(response) {
-                    alert("Status updated successfully.");
+                    Swal.fire({
+                        title: 'Status updated successfully'
+                    })
                 },
                 error: function(xhr, status, error) {
                     alert("Error updating status.");

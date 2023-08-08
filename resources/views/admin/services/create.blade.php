@@ -135,7 +135,7 @@
                                     <div class="col-md-12 mb-3">
                                         <label for="legal fee tax" class="mb-3">Description</label>
                                         <textarea name="description" type="text" placeholder="Service description" class="form-control @error('legal_fee_tax') is-invalid @enderror">{{ isset($service->description) ? $service->description : old('description') }}</textarea>
-                                        @error('legal_fee_tax')
+                                        @error('description')
                                         <span class="invalid-feedback" role="alert">
                                             {{ $message }}
                                         </span>

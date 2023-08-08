@@ -450,10 +450,10 @@
                         </span>
 
                         <span class="menu-title">Manage Ticket Enquiry </span>
-                        @php $TotalTicketMessageCount = getTotalTicketMessageCount(); @endphp
-                        @if (!empty($TotalTicketMessageCount))
+                        @php $adminTotalTicketMessageCount = getAdminTotalTicketMessageCount(); @endphp
+                        @if (!empty($adminTotalTicketMessageCount))
                             <span class="badge rounded-pill bg-warning ms-1">
-                                {{ $TotalTicketMessageCount }}
+                                {{ $adminTotalTicketMessageCount }}
                             </span>
                         @endif
                     </a>

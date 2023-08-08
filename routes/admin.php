@@ -43,6 +43,8 @@ Route::group(['middleware' => 'auth:admin'], function () {
 
     Route::get('/contact-us-listing', [AdminController::class, 'contact_us_listing'])->name('admin.contact_us_listing');
     Route::get('/contact-detail/{id}', [AdminController::class, 'contact_udetail'])->name('admin.contact_detail');
+    Route::get('/delete-contact/{id}', [AdminController::class, 'delete_contact'])->name('admin.delete_contact');
+
 
     Route::get('/service', [ServiceController::class, 'index'])->name('admin.service');
     Route::get('/create-service', [ServiceController::class, 'create_service'])->name('admin.create_service');
@@ -66,6 +68,7 @@ Route::group(['middleware' => 'auth:admin'], function () {
     //Client 
     Route::get('/clients', [ClientController::class, 'index'])->name('admin.clients');
     Route::get('/clients-detail/{id}', [ClientController::class, 'client_detail'])->name('admin.client_detail');
+    Route::get('/delete-client/{id}', [ClientController::class, 'delete_client'])->name('admin.delete_client');
 
 
     //Lawyer
@@ -74,6 +77,7 @@ Route::group(['middleware' => 'auth:admin'], function () {
     Route::get('/lawyer-bookings/{id}', [LawyerController::class, 'lawyer_bookings'])->name('admin.lawyer_bookings');
     Route::get('/lawyer-upcoming-bookings/{id}', [LawyerController::class, 'lawyer_upcoming_bookings'])->name('admin.lawyer_upcoming_bookings');
     Route::get('/change-lawyer/{id}', [LawyerController::class, 'change_status'])->name('admin.change_status');
+    Route::get('/delete-lawyer/{id}', [LawyerController::class, 'delete_lawyer'])->name('admin.delete_lawyer');
 
     //Schedule Calendar
     Route::get('/schedule', [ScheduleController::class, 'index'])->name('admin.schedule');
@@ -85,7 +89,8 @@ Route::group(['middleware' => 'auth:admin'], function () {
     Route::get('/join-chat/{id}', [TicketController::class, 'join_chat'])->name('admin.join_chat');
     Route::post('/send-msg', [TicketController::class, 'send_msg'])->name('admin.send_msg');
     Route::get('/fetch-msg', [TicketController::class, 'fetch_msg'])->name('admin.fetch_msg');
- 
+    Route::get('/delete-ticket/{id}', [TicketController::class, 'delete_ticket'])->name('admin.delete_ticket');
+
    //Appointment Chat
    Route::get('/chat/{id}', [AppointmentController::class, 'chat'])->name('admin.chat');
    Route::post('/send-message', [AppointmentController::class, 'send_message'])->name('admin.send_message');

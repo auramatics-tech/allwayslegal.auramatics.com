@@ -188,7 +188,7 @@
         var formData = new FormData($('#chat_form')[0]);
         $.ajax({
             method: "post",
-            url: "{{ route('send_message') }}",
+            url: "{{ route('dashboard.send_message') }}",
             data: formData,
             processData: false,
             contentType: false,
@@ -207,7 +207,7 @@
             console.log($('#last_msg').val())
             $.ajax({
                 method: "get",
-                url: "{{ route('fetch_message') }}",
+                url: "{{ route('dashboard.fetch_message') }}",
                 data: {
                     appointment_id: $('#appointment_id').val(),
                     last_msg: $('#last_msg').val()
@@ -216,16 +216,13 @@
                     if (data.msg.length) {
                         $('#last_msg').val(data.last_msg_id)
                         $('#chat').append(data.msg);
-                        $('#msg_box').val('');
-                        s
-                        $('#file-input').val('');
                     }
                 }
             });
         }
     }
     $(document).ready(function() {
-        setInterval(fetch_msg, 2000);
+        setInterval(fetch_msg, 3000);
     });
 
 

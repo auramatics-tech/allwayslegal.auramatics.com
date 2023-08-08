@@ -16,7 +16,7 @@
 
             <!--begin::Title-->
 
-            <h1 class="d-flex align-items-center text-dark fw-bolder fs-3 my-1"> Client Detail
+            <h1 class="d-flex align-items-center text-dark fw-bolder fs-3 my-1"> Client detail
 
                 <!--begin::Description-->
 
@@ -68,8 +68,7 @@
 
                                         Name</th>
 
-                                    <td class="d-flex align-items-center">{{ isset($client->first_name) ? $client->first_name : '' }}
-                                        {{ isset($client->last_name) ? $client->last_name : '' }}
+                                    <td class="d-flex align-items-center">{{ isset($client->name) ? $client->name : '' }}
                                     </td>
 
                                 </tr>

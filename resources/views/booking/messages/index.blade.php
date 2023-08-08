@@ -55,16 +55,17 @@
                                 <td>
                                     <div style="display: flex;gap:12px; align-items:center; justify-content:center">
 
-                                        <a href="{{ route('chat', $appointment->id) }}" class="btn"
-                                            style="background:#337ab7;color:#fff"><b><i class="fa fa-reply"></i></b></a>
-                                        @php$messageCount = getMessageCount($appointment->id);
-
-                                        @endphp
-                                        @if (!empty($messageCount))
+                                        <div style="display: flex;gap:12px; align-items:center; justify-content:center d-inline-flex">
+                                            <a href="{{ route('dashboard.chat', $appointment->id ) }}" class="btn" style="background:#337ab7;color:#fff"><b><i class="fa fa-reply"></i></b></a>
+                                            @php $messageCount = getMessageCount($appointment->id);
+                                            
+                                            @endphp
+                                            @if(!empty($messageCount))
                                             <span class="badge rounded-pill bg-warning ms-1">
-                                                {{ $messageCount }}
-                                            </span>
-                                        @endif
+                                                    {{ $messageCount }}
+                                                </span>
+                                            @endif
+                                        </div>
                                     </div>
                                 </td>
                             </tr>

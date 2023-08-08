@@ -86,7 +86,7 @@
 
                         <!--end::Svg Icon-->
 
-                        <input type="text" class="form-control w-250px ps-14" placeholder="Search Service" value="{{ isset(request()->q) ? request()->q : '' }}" name="q">
+                        <input type="text" class="form-control w-250px ps-14" placeholder="Search Client" value="{{ isset(request()->q) ? request()->q : '' }}" name="q">
 
                     </form>
 
@@ -131,35 +131,19 @@
 
                                         S.no</th>
 
-                                    <th class="min-w-100px">
+                                    <th class="min-w-125px">
 
                                         Name</th>
 
-                                    <th class="min-w-100px">
+                                    <th class="min-w-125px">
 
-                                        Country</th>
-
-                                    <th class="min-w-100px">
-
-                                        City</th>
-
-                                    <th class="min-w-100px">
-
-                                        Address</th>
-
-                                    <th class="min-w-100px">
-
-                                        Phone</th>
-
-                                    <th class="min-w-100px">
-
-                                        Position</th>
+                                        Email</th>
 
                                     <th class="min-w-125px " tabindex="0" aria-controls="kt_table_services" rowspan="1" colspan="1" aria-label="Two-step: activate to sort column ascending" style="width: 125px;">
 
                                         Created At</th>
 
-                                    <th class="text-end min-w-50px sorting_disabled" rowspan="1" colspan="1" aria-label="Actions" style="width: 100px;">Actions</th>
+                                    <th class="text-end min-w-125px sorting_disabled" rowspan="1" colspan="1" aria-label="Actions" style="width: 100px;">Actions</th>
 
                                 </tr>
 
@@ -189,8 +173,8 @@
 
                                         <div class="d-flex flex-column">
 
-                                            <a href="#" class="text-gray-800 text-hover-primary mb-1">{{ isset($client->first_name) ? $client->first_name : '' }}
-                                                {{ isset($client->last_name) ? $client->last_name : '' }}
+                                            <a href="{{ route('admin.client_detail',$client->id) }}" class="text-gray-800 text-hover-primary mb-1">{{ isset($client->name) ? $client->name : '' }}
+                                               
                                             </a>
 
                                         </div>
@@ -199,14 +183,7 @@
 
                                     </td>
 
-                                    <td>{{ isset($client->country_name) ? $client->country_name : '' }}</td>
-
-                                    <td>{{ isset($client->city_name) ? $client->city_name : '' }}</td>
-
-                                    <td>{{ isset($client->address) ? $client->address : '' }}</td>
-                                    <td>{{ isset($client->phone) ? $client->phone : '' }}</td>
-
-                                    <td>{{ isset($client->position) ? $client->position : '' }}</td>
+                                    <td>{{ isset($client->email) ? $client->email : '' }}</td>
 
                                     <td data-order="2023-01-08T12:00:52+05:30">
 
@@ -252,11 +229,11 @@
 
                                             <!--begin::Menu item-->
 
-                                           {{-- <div class="menu-item px-3">
+                                            <div class="menu-item px-3">
 
-                                                <a href="javascript:" rel="" rel1="delete-service" class="deleteRecord menu-link px-3">Delete</a>
+                                                <a href="javascript:" rel="{{ $client->id }}" rel1="delete-client" class="deleteRecord menu-link px-3">Delete</a>
 
-                                            </div> --}}
+                                            </div> 
 
                                             <!--end::Menu item-->
 

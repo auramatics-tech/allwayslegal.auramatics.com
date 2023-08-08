@@ -60,10 +60,18 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <div style="display: flex;gap:12px; align-items:center; justify-content:center">
-                                            <a href="{{ route('lawyer.join_chat', base64_encode($ticket->id)) }}"
-                                                class="btn" style="background:#337ab7;color:#fff"><b><i
-                                                        class="fa fa-reply"></i></b></a>
+                                        <div style="display: flex;gap:12px; align-items:center;justify-content:center">
+                                            <div
+                                                style="display: flex;gap:12px; align-items:center;justify-content:center d-inline-flex">
+                                                <a href="{{ route('lawyer.join_chat', base64_encode($ticket->id)) }}"
+                                                    class="btn" style="background:#337ab7;color:#fff"><b><i
+                                                            class="fa fa-reply"></i></b></a>
+                                                @php $ticketMessageCount = getTicketMessageCount($ticket->id); @endphp
+                                                @if (!empty($ticketMessageCount))
+                                                    <span
+                                                        class="badge rounded-pill bg-warning ms-1">{{ $ticketMessageCount }}</span>
+                                                @endif
+                                            </div>
                                         </div>
                                     </td>
                                 </tr>

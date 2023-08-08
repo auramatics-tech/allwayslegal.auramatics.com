@@ -97,9 +97,11 @@ class PracticeAreaController extends Controller
         $area->name = $request->name;
 
         $area->save();
-
-        return redirect()->route('admin.practice_area')->with('success', 'Data updated successfully');
-
+        if(isset($request->image)){
+        return redirect()->route('admin.practice_area')->with('success', 'Practice Area created successfully');
+        }else{
+            return redirect()->route('admin.practice_area')->with('success', 'Practice Area updated successfully');
+        }
     }
 
     public function delete_area($id)

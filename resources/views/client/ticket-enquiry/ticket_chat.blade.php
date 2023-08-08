@@ -242,7 +242,7 @@
         }
 
         $(document).ready(function() {
-            setInterval(fetch_msg, 2000);
+            setInterval(fetch_msg, 3000);
         });
 
 

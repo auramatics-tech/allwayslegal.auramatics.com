@@ -68,4 +68,10 @@ class AdminController extends Controller
         $contact = ContactUs::Find($id);
         return view('admin.contacts.detail', compact('contact'));
     }
+    public function delete_contact($id)
+    {
+        $contact = ContactUs::Find($id);
+        $contact->delete();
+        return back()->with('success', 'Data deleted successfully');
+    }
 }

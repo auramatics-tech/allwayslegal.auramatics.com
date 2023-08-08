@@ -26,7 +26,8 @@
                                 {{ isset(Auth::user()->lawyer->province) ? Auth::user()->lawyer->province : '' }}
                             </p>
                             <p><i class="fa fa-phone me-2" style="transform: rotate(90deg)"></i>
-                                <span>Phone:</span> {{ isset(Auth::user()->lawyer->phone) ? Auth::user()->lawyer->phone : '' }}
+                                <span>Phone:</span>
+                                {{ isset(Auth::user()->lawyer->phone) ? Auth::user()->lawyer->phone : '' }}
                             </p>
                             <p><i class="fa fa-envelope me-2"></i>
                                 <span> Email:</span> {{ isset(Auth::user()->email) ? Auth::user()->email : '' }}
@@ -77,7 +78,8 @@
                         @endforeach
                     @endif
                 </div>
+                <div class="btn-style py-2"><a href="{{ route('lawyer.dashboard') }}" class="btn-sm ms-auto"><i
+                            class="fa fa-chevron-left me-2"></i> Back</a></div>
             </div>
         </div>
-    </div>
-@endsection
+    @endsection

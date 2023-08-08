@@ -43,10 +43,6 @@ Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/term-of-use', [HomeController::class, 'term_of_use'])->name('term_of_use');
 Route::post('/subscribe-us', [HomeController::class, 'subscribe_us'])->name('admin.subscribe_us');
 
-//chat
-Route::get('/chat/{id}', [MessageController::class, 'chat'])->name('chat');
-Route::post('/send-message', [MessageController::class, 'send_message'])->name('send_message');
-Route::get('/fetch-message', [MessageController::class, 'fetch_message'])->name('fetch_message');
 
 Route::post('/user-login', [App\Http\Controllers\Auth\LoginController::class, 'user_login'])->name('user.login');
 
@@ -64,6 +60,7 @@ Route::get('/get-data', [App\Http\Controllers\Auth\RegisterController::class, 'g
 Route::get('forgot-password', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'show_forgot_password'])->name("show_forgot_password");
 Route::post('forgot-password', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'get_password_link'])->name("get_password_link");
 
+Route::middleware(['verified'])->group(function () {
 Route::get('/booking', [BookingController::class, 'index'])->name('booking');
 
 Route::middleware(['auth', 'verified'])->group(function () {
@@ -147,4 +144,11 @@ Route::prefix('dashboard')->middleware(['auth'])->name('dashboard.')->group(func
     Route::post('/change-password-save', [DashboardController::class, 'change_password_save'])->name('change_password_save');
     Route::get('/auth/zoom', [ZoomController::class, 'redirectToZoom']);
     Route::get('/callback/zoom', [ZoomController::class, 'handleZoomCallback']);
+
+    //chat
+Route::get('/chat/{id}', [MessageController::class, 'chat'])->name('chat');
+Route::post('/send-message', [MessageController::class, 'send_message'])->name('send_message');
+Route::get('/fetch-message', [MessageController::class, 'fetch_message'])->name('fetch_message');
+
+});
 });

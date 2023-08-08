@@ -72,8 +72,8 @@
 
                                         Name</th>
 
-                                    <td class="d-flex align-items-center">{{ isset($lawyer->first_name) ? $lawyer->first_name : '' }}
-                                        {{ isset($lawyer->last_name) ? $lawyer->last_name : '' }}
+                                    <td class="d-flex align-items-center">{{ isset($lawyer->name) ? $lawyer->name : '' }}
+                                       
                                     </td>
 
                                 </tr>

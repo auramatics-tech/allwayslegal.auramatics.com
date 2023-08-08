@@ -41,6 +41,12 @@ class DashboardController extends Controller
     public function change_password_save(Request $request)
 
     {
+        $data = $request->validate([
+            'current_password' => 'required',
+            'new_password' => 'required|string|min:6|max:8',
+            'confirm_password' => 'required|string|min:6|max:8',
+        ]);
+
         $data = $request->except('_token');
         $check = Hash::check($data['current_password'], auth()->user()->password);
         if(!$check)

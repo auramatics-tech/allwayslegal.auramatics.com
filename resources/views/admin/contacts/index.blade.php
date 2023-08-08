@@ -290,15 +290,15 @@
 
                                                         <!--begin::Menu item-->
 
-                                                        {{-- <div class="menu-item px-3">
+                                                         <div class="menu-item px-3">
 
                                                             <a href="javascript:" rel="{{ $contact->id }}"
 
-                                                                rel1="delete-user"
+                                                                rel1="delete-contact"
 
                                                                 class="deleteRecord menu-link px-3">Delete</a>
 
-                                                        </div> --}}
+                                                        </div>
 
                                                         <!--end::Menu item-->
 
