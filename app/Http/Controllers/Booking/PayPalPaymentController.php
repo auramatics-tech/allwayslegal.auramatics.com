@@ -253,7 +253,10 @@ class PayPalPaymentController extends Controller
         $payment = new Payment();
 
         $payment->paypal_id = $orderID;
+
         $payment->capture_id = $captureID;
+
+        $payment->payer_id = $payer_email;
 
         $payment->appointment_id = $appointmentID;
 
@@ -292,18 +295,18 @@ class PayPalPaymentController extends Controller
         $zoom_secret = env('ZOOM_SECRET');
         $zoom_account_id = env('ZOOM_ACCOUNT_ID');
         $meeting = create_meeting($topic, $topic, $start_time, 45, $zoom_key, $zoom_secret ,$zoom_account_id);
-        
-  
+
+
         $appointment->uuid = $meeting['data']['uuid'];
         $appointment->zoom_id = $meeting['data']['id'];
         $appointment->start_url = $meeting['data']['start_url'];
         $appointment->join_url = $meeting['data']['join_url'];
         $appointment->save();
-        
+
         // echo "<pre>";
         // print_r( $appointment);
         // die;
-        
+
         return view('booking.booking_successful', compact('appointment'));
     }
 

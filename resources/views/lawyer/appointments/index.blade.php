@@ -56,7 +56,7 @@
         <div class="mb-3">
             <h4 class="mb-3" style="color:#337ab7">Appointments</h4>
         </div>
-        <div style="width:100%; overflow-x: auto;height:300px">
+        <div style="width:100%; overflow-x: auto;height:80vh">
             <table class="table table-striped table-bordered text-center appointment_table">
                 <thead style="background:#337ab7; color:#fff">
                     <tr>
@@ -152,14 +152,14 @@
                                                 <li> <a href="{{ route('lawyer.appointment.cancel_request', ['id' => isset($appointment->id) ? $appointment->id : '']) }}"
                                                         class="text-dark px-3 py-2">Delete</a> </li>
                                             @endif
-                                            @php
+                                            {{--@php
                                                 $currentTime = now('UTC');
                                                 $slotTime = $appointment->date . ' ' . date('H:i:s', strtotime($appointment->end_time));
                                             @endphp
-                                            @if ($slotTime && $currentTime >= $slotTime && isset($appointment->status) && $appointment->status == 3)
+                                            @if ( $currentTime >= $slotTime && isset($appointment->status) && $appointment->status == 3 && $appointment->client_join ==  1)--}}
                                                 <li> <a href="{{ route('lawyer.appointment.send_invoice', ['id' => isset($appointment->id) ? $appointment->id : '']) }}"
                                                         class="text-dark px-3 py-2">Invoice</a> </li>
-                                            @endif
+                                          {{-- @endif--}}
                                         </ul>
                                     </div>
                                     {{-- <div style="display: flex;gap:12px; align-items:center;">

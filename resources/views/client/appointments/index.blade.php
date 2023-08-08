@@ -139,7 +139,7 @@
                                             @endif
                                             @if (isset($appointment->status) && $appointment->status == 3)
                                                 <li><a href="{{ isset($appointment->join_url) ? $appointment->join_url : '' }}"
-                                                        class="text-dark px-3 py-2" target="_blank">Join</a></li>
+                                                        class="text-dark px-3 py-2" target="_blank" id="client_join_id">Join</a></li>
                                             @endif
                                         </ul>
                                         {{-- <div style="display: flex;gap:12px; align-items:center;">
@@ -279,6 +279,9 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
+        $(document).on('click', "#client_join_id", function() {
+            console.log("client here");
+        });
         $(document).on('click', "#appointment_cancel", function() {
 
             Swal.fire({

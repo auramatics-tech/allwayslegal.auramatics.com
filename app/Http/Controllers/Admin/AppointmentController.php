@@ -70,61 +70,64 @@ class AppointmentController extends Controller
         $lawyer = Lawyer::find($appointment->lawyer_id);
         if (isset($lawyer->paypal_email_id)) {
             $service = Service::where('id', $appointment->service_id)->first();
-          
+
             $admin_id = RoleUser::where('role_id', 1)->pluck('user_id')->toArray();
             $admin_emails = User::whereIn('id', $admin_id)->pluck('email')->toArray();
             $data = Appointment::find($request->appt_id);
             $data->payment_release = 2;
 
             $payments = Payment::where('lawyer_id', $appointment->lawyer_id)->first();
-
-            $pdf = PDF::loadView('admin.invoice.payment_commission', compact('appointment', 'payments', 'lawyer', 'service'));
-            $pdf_path = public_path('invoice/commission-invoice-000' . $data->id . '.pdf');
-            $pdf->save($pdf_path);
-
-            // Update the invoice_pdf field in the $data object
-            $name = 'commission-invoice-000' . $data->id . '.pdf';
-            $data->invoice_pdf = $name;
-            $data->save();
-            // Get the PDF attachment path
-            $pdf_attach = public_path('invoice/' . $data->invoice_pdf);
-
-            // Send email to the client with the attached PDF
-            Mail::send('mail.commission', compact('data', 'appointment'), function ($message) use ($data, $pdf_attach) {
-                $message->to($data->client_email)
-                    ->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'))
-                    ->subject('Payment Commission')
-                    ->attach($pdf_attach);
-            });
-
-            // Send email to admins
-            foreach ($admin_emails as $admin_email) {
-
-                Mail::send('mail.commission', compact('appointment'), function ($message) use ($admin_email, $pdf_attach) {
-                    $message->to($admin_email)
-                        ->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'))->subject('Payment Commission')->attach($pdf_attach);
-                });
-            }
             $payouts = $this->payout($appointment,$lawyer, $payments);
+            if(isset( $payouts)){
+                $pdf = PDF::loadView('admin.invoice.payment_commission', compact('appointment', 'payments', 'lawyer', 'service'));
+                $pdf_path = public_path('invoice/commission-invoice-000' . $data->id . '.pdf');
+                $pdf->save($pdf_path);
+
+                // Update the invoice_pdf field in the $data object
+                $name = 'commission-invoice-000' . $data->id . '.pdf';
+                $data->invoice_pdf = $name;
+                $data->save();
+                // Get the PDF attachment path
+                $pdf_attach = public_path('invoice/' . $data->invoice_pdf);
+
+                // Send email to the client with the attached PDF
+                Mail::send('mail.commission', compact('data', 'appointment'), function ($message) use ($data, $pdf_attach) {
+                    $message->to($data->client_email)
+                        ->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'))
+                        ->subject('You have received a payout!')
+                        ->attach($pdf_attach);
+                });
+                    Mail::send('mail.commission', compact('appointment'), function ($message) use ($pdf_attach) {
+                        $message->to(env('MAIL_TO_ADMIN'))
+                            ->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'))->subject('Payout sent to lawyer!')->attach($pdf_attach);
+                    });
+                return redirect()->back()->with('success', 'Approved and Money transferred successfully');
+            }else{
+                return redirect()->back()->with('error', 'Money not transferred!');
+            }
             // echo "<pre>";print_r($payouts);die;
-            return redirect()->back()->with('success', 'Approved  Successfully!');
         } else {
             return redirect()->back()->with('error', 'Lawyer Paypal Email Not found!');
         }
     }
     public function payout($appointment ,$lawyer, $payments)
     {
+
         // $adminPayPalEmail = env('PAYPAL_EMAIL');
         $lawyerPayPalEmail = $lawyer->paypal_email_id;
+        // echo "<pre>";print_r($lawyerPayPalEmail);die;
         $amount = $payments->price;
         $admin_commision = $amount * 0.8;
-        // echo "<prE>";print_r($admin_commision);die;
+
         $currency = 'USD';
+
         // PayPal API endpoint (sandbox or live)
         $apiEndpoint =  env('PAYPAL_URL') . '/v1/payments/payouts';
+
         // PayPal API credentials
         $clientId = env('PAYPAL_API_CLIENT_ID');
         $secret = env('PAYPAL_API_CLIENT_SECRET');
+        $uniqueBatchId = "Payouts_" . date('YmdHisu') . '_' . $appointment->id;
 
         // Create a cURL resource
         $ch = curl_init();
@@ -144,11 +147,11 @@ class AppointmentController extends Controller
                 "recipient_type"=> "EMAIL",
                 "note"=> "Thanks for your patronage!",
                 "sender_item_id"=> date('Ymd',strtotime($appointment->created_at)).$appointment->id,
-                "recipient_wallet"=> "RECIPIENT_SELECTED"
+                "recipient_wallet"=> "PAYPAL"
                 ]
             ],
             "sender_batch_header"=> [
-              "sender_batch_id"=> "Payouts_".date('Ymd',strtotime($appointment->created_at)).$appointment->id,
+              "sender_batch_id"=> $uniqueBatchId,
               "email_subject"=> "You have a payout!",
               "email_message"=> "You have received a payout! Thanks for using our service!"
               ]
@@ -160,7 +163,7 @@ class AppointmentController extends Controller
 
         // Execute the cURL request
         $response = curl_exec($ch);
-
+        // echo "<pre>";print_r( $response);die;
         // Check for cURL errors
         if (curl_errno($ch)) {
             // Handle the error here
@@ -170,29 +173,32 @@ class AppointmentController extends Controller
         }
         curl_close($ch);
         $responseData = json_decode($response, true);
-        if(isset($responseData['sender_batch_header']['batch_id'])){
-            $payouts =  New Payouts;
+        // echo "<pre>";print_r($responseData);die;
+        if(isset($responseData['batch_header']['payout_batch_id'])){
+            $payouts =  new Payouts();
                 $payouts->lawyer_id =  $appointment->lawyer_id;
                 $payouts->appointments_id =  $appointment->id;
                 $payouts->client_id =  $appointment->client_id;
-                $payouts->payout_batch_id = $responseData['sender_batch_header']['batch_id'];
+                $payouts->payout_batch_id = $responseData['batch_header']['payout_batch_id'];
+                $payouts->batch_status = $responseData['batch_header']['batch_status'];
+                $payouts->sender_batch_id = $responseData['batch_header']['sender_batch_header']['sender_batch_id'];
                 $payouts->total_amount =   $amount;
                 $payouts->paid_amount =   $admin_commision;
                 $payouts->save();
-        }  
+        }
         return $response;
-         
+
 
         // Check the response status
-        // if (isset($responseData['batch_header']['batch_status']) && $responseData['batch_header']['batch_status'] === 'SUCCESS') {
+        if (isset($responseData['batch_header']['batch_status']) && $responseData['batch_header']['batch_status'] === 'SUCCESS') {
 
-        //     // The payout was successful - add your success handling logic here
-        //     return response()->json(['success' => true, 'message' => 'Money transferred successfully']);
-        // } else {
-        //     // Something went wrong with the payout - add your error handling logic here
-        //     $errorMessage = $responseData['message'] ?? 'Unknown error';
-        //     return response()->json(['success' => false, 'message' => "Payment Error: {$errorMessage}"]);
-        // }
+            // The payout was successful - add your success handling logic here
+            return response()->json(['success' => true, 'message' => 'Money transferred successfully']);
+        } else {
+            // Something went wrong with the payout - add your error handling logic here
+            $errorMessage = $responseData['message'] ?? 'Unknown error';
+            return response()->json(['success' => false, 'message' => "Payment Error: {$errorMessage}"]);
+        }
     }
 
     public function save_disapprove(Request $request)
@@ -213,7 +219,7 @@ class AppointmentController extends Controller
 
     public function chat($id)
     {
-       
+
         $data = Appointment::find($id);
 
         // echo"<pre>";print_r($data);die;

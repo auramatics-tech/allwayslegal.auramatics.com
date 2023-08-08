@@ -10,6 +10,9 @@
         .paypal-powered-by {
             opacity: 0 !important;
         }
+        .card_rw_img img{
+            height: 100%;
+        }
     </style>
 
     <div class="py-4 right_width">
